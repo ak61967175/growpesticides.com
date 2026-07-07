@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/* Navbar Customization */
+.navbar {
+  background-color: #198754 !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #28a745;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar-brand img {
+  height: 150px;
+  width: 180px;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  margin-left: -30px;
+  display: block;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #28a745 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1920&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+/* Product Cards - FIXED IMAGE SIZING */
+.product-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ensure all images are the same size */
+.product-card img {
+  height: 635px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Filter Buttons */
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+  margin: 0 5px;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success.active {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Product Details Page */
+.product-badge {
+  background-color: #f8f9fa;
+  border-left: 4px solid #28a745;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  position: relative;
+  background: #101d14
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop")
+    center/cover no-repeat;
+  background-blend-mode: overlay;
+}
+
+.footer-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 29, 20, 0.92),
+    rgba(16, 29, 20, 0.97)
+  );
+  padding: 0.5rem 0 0;
+}
+
+/* Category quick-link buttons on the homepage */
+.category-btn {
+  position: relative;
+  text-decoration: none;
+}
+
+.category-btn img {
+  display: block;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.category-btn:hover img {
+  transform: scale(1.06);
+}
+
+.category-btn-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent);
+}
+
+/* Featured Products Section */
+.featured-product-card img {
+  height: 235px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#productPests .badge,
+#productCrops .badge {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
