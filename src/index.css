@@ -175,7 +175,7 @@ body {
   overflow: hidden;
   height: 100%;
   border: 1px solid #28a745;
-  margin: 10px 10px ;
+  margin: 10px 0px ;
 }
 
 .product-card:hover {
@@ -396,9 +396,9 @@ body {
     transform: none !important;
   }
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .col-md-4 {
         flex: 0 0 auto;
         width: 31.5%;
     }
-}
+} */
