@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import products from "../data/products";
+import products, { localizeProduct } from "../data/products";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function ProductDetail() {
   const { id } = useParams();
-  const product = products[id];
-  const { t } = useLanguage();
+  const rawProduct = products[id];
+  const { t, lang } = useLanguage();
+  const product = localizeProduct(rawProduct, lang);
   const [panel, setPanel] = useState(null); // null | "phi" | "usageRate"
 
   if (!product) {

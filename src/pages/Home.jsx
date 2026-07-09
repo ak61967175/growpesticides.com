@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import products from "../data/products";
-import ProductCard from "../components/ProductCard";
+import products, { featuredIds, localizeProduct } from "../data/products";
 import { useLanguage } from "../context/LanguageContext";
-
-const featuredIds = [2, 16, 5];
 
 const categoryLinks = [
   {
@@ -26,15 +23,38 @@ const categoryLinks = [
 ];
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+
+  const featuredProducts = featuredIds
+    .map((id) => ({ id, product: products[id] }))
+    .filter((entry) => entry.product);
+
+  // Duplicate the list so the CSS scroll animation can loop seamlessly.
+  const carouselItems = [...featuredProducts, ...featuredProducts];
 
   return (
     <>
       {/* Hero Section */}
       <header className="hero-section d-flex align-items-center text-white">
-        <div className="container text-center">
-          <h1 className="display-3 fw-bold mb-4">{t("heroTitle")}</h1>
-          <p className="lead mb-0">{t("heroSubtitle")}</p>
+        <div className="hero-particles" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="container text-center position-relative">
+          <h1 className="display-3 fw-bold mb-4 hero-anim hero-anim-1">
+            {t("heroTitle")}
+          </h1>
+          <p className="lead mb-4 hero-anim hero-anim-2">{t("heroSubtitle")}</p>
+          <Link
+            to="/products"
+            className="btn btn-success btn-lg hero-anim hero-anim-3"
+          >
+            {t("showAll")} <i className="fas fa-arrow-right"></i>
+          </Link>
         </div>
       </header>
 
@@ -58,22 +78,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products Section */}
-      <section className="py-5">
+      {/* Featured Products Carousel Section */}
+      <section className="py-5 featured-carousel-section">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold text-success">{t("featuredTitle")}</h2>
             <p className="text-muted">{t("featuredSubtitle")}</p>
           </div>
+        </div>
 
-          <div className="row g-4">
-            {featuredIds.map((id) => (
-              <ProductCard key={id} id={id} product={products[id]} />
-            ))}
+        <div className="carousel-viewport">
+          <div className="carousel-track">
+            {carouselItems.map(({ id, product }, index) => {
+              const p = localizeProduct(product, lang);
+              return (
+                <Link
+                  to={`/product/${id}`}
+                  className="carousel-card text-decoration-none"
+                  key={`${id}-${index}`}
+                >
+                  <div className="card h-100 shadow-sm border-0">
+                    <img
+                      src={p.image}
+                      className="card-img-top"
+                      alt={p.categoryLabel}
+                    />
+                    <div className="card-body">
+                      <span className="badge bg-success mb-2">
+                        {p.categoryLabel}
+                      </span>
+                      <h5 className="card-title">{p.title}</h5>
+                      <p className="card-text text-muted">{p.subtitle}</p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
+        </div>
 
+        <div className="container">
           <div className="text-center mt-5">
-            <Link to="/products" className="btn btn-success btn-lg">
+            <Link to="/products" className="btn btn-success btn-lg px-5 show-all-btn">
               {t("showAll")} <i className="fas fa-arrow-right"></i>
             </Link>
           </div>

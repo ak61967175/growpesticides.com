@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import products from "../data/products";
+import products, { localizeProduct } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -8,12 +8,12 @@ import { useLanguage } from "../context/LanguageContext";
 // growth regulators (IGR / "Anti-peeling"), then Nutrients & micronutrients last.
 function getPriority(product) {
   if (product.category === "Nutrients & micronutrients") return 2;
-  if (product.categoryLabel === "Anti-peeling") return 1;
+  if (product.categoryLabel.en === "Anti-peeling") return 1;
   return 0;
 }
 
 export default function Products() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState("");
   const initialFilter = searchParams.get("category") || "all";
@@ -36,14 +36,15 @@ export default function Products() {
   }, []);
 
   const visibleProducts = entries.filter(([, product]) => {
+    const localized = localizeProduct(product, lang);
     const term = search.toLowerCase();
     const matchesSearch =
-      product.title.toLowerCase().includes(term) ||
-      product.subtitle.toLowerCase().includes(term);
+      localized.title.toLowerCase().includes(term) ||
+      localized.subtitle.toLowerCase().includes(term);
 
     let matchesFilter = true;
     if (activeFilter === "growth-regulator") {
-      matchesFilter = product.categoryLabel === "Anti-peeling";
+      matchesFilter = product.categoryLabel.en === "Anti-peeling";
     } else if (activeFilter !== "all") {
       matchesFilter =
         product.category.toLowerCase() === activeFilter.toLowerCase();

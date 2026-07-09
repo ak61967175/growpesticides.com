@@ -7,8 +7,8 @@ body {
 
 /* Navbar Customization */
 .navbar {
-  background-color: #198754 !important;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   border-bottom: 2px solid #28a745;
@@ -29,23 +29,141 @@ body {
 }
 
 .navbar .nav-link {
-  font-weight: 500;
+  font-weight: 600;
+  color: #1c2b1e;
   transition: color 0.2s ease;
 }
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-  color: #28a745 !important;
+  color: #198754 !important;
+}
+
+/* Language switch button — always visible, even with the mobile menu closed */
+.lang-switch-btn {
+  white-space: nowrap;
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 /* Hero Section */
 .hero-section {
+  position: relative;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(6, 30, 12, 0.62), rgba(6, 30, 12, 0.62)),
     url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1920&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
   height: 80vh;
+  overflow: hidden;
+}
+
+/* Hero text/button entrance animation */
+.hero-anim {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeUp 0.9s ease forwards;
+}
+
+.hero-anim-1 {
+  animation-delay: 0.1s;
+}
+
+.hero-anim-2 {
+  animation-delay: 0.35s;
+}
+
+.hero-anim-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Softly floating "leaf" particles drifting up through the hero */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-particles span {
+  position: absolute;
+  bottom: -40px;
+  width: 10px;
+  height: 10px;
+  background: rgba(120, 220, 150, 0.55);
+  border-radius: 60% 40% 55% 45% / 55% 45% 55% 45%;
+  animation: floatUp linear infinite;
+}
+
+.hero-particles span:nth-child(1) {
+  left: 8%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 14s;
+  animation-delay: 0s;
+}
+.hero-particles span:nth-child(2) {
+  left: 22%;
+  width: 9px;
+  height: 9px;
+  animation-duration: 11s;
+  animation-delay: 2s;
+}
+.hero-particles span:nth-child(3) {
+  left: 45%;
+  width: 16px;
+  height: 16px;
+  animation-duration: 17s;
+  animation-delay: 1s;
+}
+.hero-particles span:nth-child(4) {
+  left: 63%;
+  width: 11px;
+  height: 11px;
+  animation-duration: 13s;
+  animation-delay: 4s;
+}
+.hero-particles span:nth-child(5) {
+  left: 80%;
+  width: 13px;
+  height: 13px;
+  animation-duration: 16s;
+  animation-delay: 3s;
+}
+.hero-particles span:nth-child(6) {
+  left: 92%;
+  width: 8px;
+  height: 8px;
+  animation-duration: 10s;
+  animation-delay: 5s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-90vh) translateX(20px) rotate(180deg);
+    opacity: 0;
+  }
 }
 
 /* Product Cards - FIXED IMAGE SIZING */
@@ -167,4 +285,112 @@ body {
   font-size: 14px;
   padding: 8px 12px;
   border-radius: 20px;
+}
+
+/* Featured Products Carousel — auto-scrolls sideways on its own */
+.featured-carousel-section {
+  overflow: hidden;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0 30px;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 5%,
+    #000 95%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 5%,
+    #000 95%,
+    transparent 100%
+  );
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  padding: 0 24px;
+  animation: carouselScroll 40s linear infinite;
+}
+
+.carousel-viewport:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 260px;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-6px);
+}
+
+.carousel-card .card {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
+@keyframes carouselScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+[dir="rtl"] .carousel-track {
+  animation-name: carouselScrollRtl;
+}
+
+@keyframes carouselScrollRtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+/* Show All Products button on the homepage — kept clearly visible */
+.show-all-btn {
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(40, 167, 69, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.show-all-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(40, 167, 69, 0.45);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim,
+  .hero-particles span,
+  .carousel-track {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
