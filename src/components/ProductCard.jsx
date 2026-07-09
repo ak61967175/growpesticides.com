@@ -9,7 +9,7 @@ export default function ProductCard({ id, product }) {
   if (!p) return null;
 
   return (
-    <div className="col-md-4 col-sm-6 product-card" data-category={p.category}>
+    <div className="col-lg-3 col-md-4 col-sm-6 col-6 product-card" data-category={p.category}>
       <div className="card h-100 shadow-sm border-0">
         <img src={p.image} className="card-img-top" alt={p.categoryLabel} />
         <div className="card-body">

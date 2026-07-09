@@ -185,10 +185,38 @@ body {
 
 /* Ensure all images are the same size */
 .product-card img {
-  height: 300px;
+  height: 200px;
   width: 100%;
   object-fit: contain;
   object-position: center;
+  padding: 10px;
+}
+
+.product-card .card-body {
+  padding: 0.9rem;
+}
+
+.product-card .card-title {
+  font-size: 1rem;
+}
+
+.product-card .card-text {
+  font-size: 0.85rem;
+}
+
+.product-card .badge {
+  font-size: 0.7rem;
+}
+
+.product-card .btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+}
+
+@media (max-width: 575.98px) {
+  .product-card img {
+    height: 140px;
+  }
 }
 
 /* Buttons */

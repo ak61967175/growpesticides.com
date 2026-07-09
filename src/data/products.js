@@ -1259,6 +1259,1060 @@ const products = {
       usageRate: "250 جم لكل 100 لتر ماء رشًا على الأوراق.",
     },
   },
+  33: {
+    category: "herbicide",
+    categoryLabel: { en: "Herbicide", ar: "مبيد حشائش" },
+    image: "/assets/arvion.jpg",
+    en: {
+      title: "Arvion",
+      subtitle: "Clethodim 24% EC",
+      description:
+        "Arvion contains Clethodim 24% EC, a selective post-emergence graminicide that controls annual and perennial grass weeds in broadleaf crops without harming the crop itself.",
+      features: [
+        "Selective control of grass weeds only.",
+        "Rainfast shortly after application.",
+        "Safe on a wide range of broadleaf crops.",
+      ],
+      pestsControlled: [
+        "Wild oat",
+        "Barnyard grass",
+        "Johnson grass",
+        "Bermuda grass",
+      ],
+      cropsUsedFor: ["Soybean", "Cotton", "Vegetables"],
+      activeIngredient: "Clethodim 24% EC",
+      phi: "30–60 days depending on crop.",
+      usageRate: "40–50 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "أرفيون",
+      subtitle: "كليثوديم 24% EC",
+      description:
+        "أرفيون يحتوي على كليثوديم 24% EC، مبيد حشائش انتقائي يستخدم بعد الإنبات لمكافحة الحشائش النجيلية الحولية والمعمرة في المحاصيل عريضة الأوراق دون الإضرار بالمحصول.",
+      features: [
+        "مكافحة انتقائية للحشائش النجيلية فقط.",
+        "ثابت على الأوراق بعد وقت قصير من الرش.",
+        "آمن على مجموعة واسعة من المحاصيل عريضة الأوراق.",
+      ],
+      pestsControlled: [
+        "الشوفان البري",
+        "حشيشة الدنيبة",
+        "حشيشة جونسون",
+        "النجيل البلدي",
+      ],
+      cropsUsedFor: ["فول الصويا", "القطن", "الخضروات"],
+      activeIngredient: "كليثوديم 24% EC",
+      phi: "30–60 يومًا حسب المحصول.",
+      usageRate: "40–50 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  34: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
+    image: "/assets/benzogro.png",
+    en: {
+      title: "Benzogro",
+      subtitle: "Emamectin Benzoate 5.7% WG",
+      description:
+        "Benzogro contains Emamectin Benzoate 5.7% WG, a powerful larvicide with translaminar movement inside leaf tissue, giving fast and long-lasting control of caterpillars.",
+      features: [
+        "Fast acting against larvae.",
+        "Translaminar movement inside leaf tissue.",
+        "Long residual activity.",
+      ],
+      pestsControlled: [
+        "Caterpillars",
+        "Cotton leafworm",
+        "Tomato borer",
+        "Diamondback moth",
+      ],
+      cropsUsedFor: ["Cotton", "Vegetables", "Fruit Trees"],
+      activeIngredient: "Emamectin Benzoate 5.7% WG",
+      phi: "3–7 days.",
+      usageRate: "20 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "بنزوجرو",
+      subtitle: "إيمامكتين بنزوات 5.7% WG",
+      description:
+        "بنزوجرو يحتوي على إيمامكتين بنزوات 5.7% WG، مبيد يرقي قوي ينتقل داخل أنسجة الورقة (حركة عبر الصفائح) مما يمنح مكافحة سريعة وطويلة المفعول لليرقات.",
+      features: [
+        "فعالية سريعة ضد اليرقات.",
+        "حركة عبر أنسجة الورقة.",
+        "نشاط متبقي طويل المدى.",
+      ],
+      pestsControlled: [
+        "الديدان (اليرقات)",
+        "دودة ورق القطن",
+        "دودة ثمار الطماطم",
+        "فراشة الماس",
+      ],
+      cropsUsedFor: ["القطن", "الخضروات", "أشجار الفاكهة"],
+      activeIngredient: "إيمامكتين بنزوات 5.7% WG",
+      phi: "3–7 أيام.",
+      usageRate: "20 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  35: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
+    image: "/assets/clormactin.jpg",
+    en: {
+      title: "Clormactin",
+      subtitle: "Emamectin Benzoate 5.7% + Chlorpyrifos 36% EC",
+      description:
+        "Clormactin combines Emamectin Benzoate 5.7% and Chlorpyrifos 36% EC, pairing translaminar and contact/stomach action for broad-spectrum control of chewing and soil-surface insects.",
+      features: [
+        "Dual mode of action.",
+        "Broad-spectrum insect control.",
+        "Quick knockdown plus lasting residual effect.",
+      ],
+      pestsControlled: [
+        "Caterpillars",
+        "Aphids",
+        "Whiteflies",
+        "Soil insects",
+      ],
+      cropsUsedFor: ["Cotton", "Vegetables", "Fruit Trees"],
+      activeIngredient: "Emamectin Benzoate 5.7% + Chlorpyrifos 36% EC",
+      phi: "14 days.",
+      usageRate: "75 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "كلورماكتين",
+      subtitle: "إيمامكتين بنزوات 5.7% + كلوربيريفوس 36% EC",
+      description:
+        "كلورماكتين يجمع بين إيمامكتين بنزوات 5.7% وكلوربيريفوس 36% EC، مزاوجًا بين الحركة عبر الأنسجة والفعل التلامسي والمعوي لمكافحة واسعة الطيف للحشرات القارضة وحشرات سطح التربة.",
+      features: [
+        "فعل مزدوج مركب.",
+        "مكافحة واسعة الطيف للحشرات.",
+        "إسقاط سريع مع تأثير متبقي طويل.",
+      ],
+      pestsControlled: [
+        "الديدان (اليرقات)",
+        "المن",
+        "الذبابة البيضاء",
+        "حشرات التربة",
+      ],
+      cropsUsedFor: ["القطن", "الخضروات", "أشجار الفاكهة"],
+      activeIngredient: "إيمامكتين بنزوات 5.7% + كلوربيريفوس 36% EC",
+      phi: "14 يومًا.",
+      usageRate: "75 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  36: {
+    category: "herbicide",
+    categoryLabel: { en: "Herbicide", ar: "مبيد حشائش" },
+    image: "/assets/corvex.jpg",
+    en: {
+      title: "Corvex",
+      subtitle: "Glufosinate Ammonium 20% SL",
+      description:
+        "Corvex contains Glufosinate Ammonium 20% SL, a non-selective contact herbicide that gives fast visible burn-down and is a useful alternative mode of action for resistance management.",
+      features: [
+        "Non-selective, broad-spectrum control.",
+        "Fast visible burn-down effect.",
+        "Useful in resistance-management rotation programs.",
+      ],
+      pestsControlled: [
+        "Broadleaf weeds",
+        "Grass weeds",
+        "Perennial weeds",
+      ],
+      cropsUsedFor: ["Orchards", "Non-crop areas", "Pre-planting fields"],
+      activeIngredient: "Glufosinate Ammonium 20% SL",
+      phi: "Non-crop / pre-planting use; not applicable to harvested produce.",
+      usageRate: "300–400 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "كورڤيكس",
+      subtitle: "جلوفوسينات أمونيوم 20% SL",
+      description:
+        "كورڤيكس يحتوي على جلوفوسينات أمونيوم 20% SL، مبيد حشائش تلامسي غير انتقائي يعطي حرقًا سريعًا وواضحًا، ويُعد بديلاً مفيدًا في برامج إدارة المقاومة.",
+      features: [
+        "مكافحة واسعة الطيف غير انتقائية.",
+        "تأثير حرق سريع وواضح.",
+        "مفيد في برامج تدوير آليات المقاومة.",
+      ],
+      pestsControlled: [
+        "الحشائش عريضة الأوراق",
+        "الحشائش النجيلية",
+        "الحشائش المعمرة",
+      ],
+      cropsUsedFor: ["البساتين", "الأراضي غير الزراعية", "الأراضي قبل الزراعة"],
+      activeIngredient: "جلوفوسينات أمونيوم 20% SL",
+      phi: "استخدام قبل الزراعة أو في الأراضي غير الزراعية؛ غير مطبق على المحصول المحصود.",
+      usageRate: "300–400 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  37: {
+    category: "fungicide",
+    categoryLabel: { en: "Fungicide", ar: "مبيد فطري" },
+    image: "/assets/daimorvy.png",
+    en: {
+      title: "Daimorvy",
+      subtitle: "Dimethomorph 50% WG",
+      description:
+        "Daimorvy contains Dimethomorph 50% WG, a systemic fungicide with strong preventive and curative activity against oomycete diseases such as downy mildew and late blight.",
+      features: [
+        "Systemic and translaminar movement.",
+        "Strong activity against oomycete pathogens.",
+        "Rainfast protection shortly after application.",
+      ],
+      pestsControlled: ["Downy mildew", "Late blight"],
+      cropsUsedFor: ["Grapes", "Potatoes", "Tomatoes", "Onions"],
+      activeIngredient: "Dimethomorph 50% WG",
+      phi: "7 days.",
+      usageRate: "30 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "دايمورڤي",
+      subtitle: "دايميثومورف 50% WG",
+      description:
+        "دايمورڤي يحتوي على دايميثومورف 50% WG، مبيد فطري جهازي بفعالية وقائية وعلاجية قوية ضد أمراض الفطريات البيضية مثل البياض الزغبي واللفحة المتأخرة.",
+      features: [
+        "حركة جهازية وعبر أنسجة الورقة.",
+        "فعالية قوية ضد الفطريات البيضية.",
+        "ثبات على الأوراق بعد وقت قصير من الرش.",
+      ],
+      pestsControlled: ["البياض الزغبي", "اللفحة المتأخرة"],
+      cropsUsedFor: ["العنب", "البطاطس", "الطماطم", "البصل"],
+      activeIngredient: "دايميثومورف 50% WG",
+      phi: "7 أيام.",
+      usageRate: "30 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  38: {
+    category: "fungicide",
+    categoryLabel: { en: "Fungicide", ar: "مبيد فطري" },
+    image: "/assets/daivogro.jpg",
+    en: {
+      title: "Daivogro",
+      subtitle: "Difenoconazole 25% EC",
+      description:
+        "Daivogro contains Difenoconazole 25% EC, a broad-spectrum systemic triazole fungicide offering both protective and curative control against a wide range of fungal diseases.",
+      features: [
+        "Broad-spectrum disease control.",
+        "Long residual protection.",
+        "Systemic movement within plant tissue.",
+      ],
+      pestsControlled: [
+        "Powdery mildew",
+        "Rust",
+        "Leaf spot",
+        "Scab",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Grapes"],
+      activeIngredient: "Difenoconazole 25% EC",
+      phi: "7–14 days.",
+      usageRate: "20–30 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "دايفوجرو",
+      subtitle: "دايفينوكونازول 25% EC",
+      description:
+        "دايفوجرو يحتوي على دايفينوكونازول 25% EC، مبيد فطري جهازي واسع الطيف من مجموعة الترايازول، يعمل بشكل وقائي وعلاجي ضد مجموعة واسعة من الأمراض الفطرية.",
+      features: [
+        "مكافحة واسعة الطيف للأمراض الفطرية.",
+        "حماية متبقية طويلة المدى.",
+        "حركة جهازية داخل أنسجة النبات.",
+      ],
+      pestsControlled: [
+        "البياض الدقيقي",
+        "الصدأ",
+        "تبقع الأوراق",
+        "الجرب",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "العنب"],
+      activeIngredient: "دايفينوكونازول 25% EC",
+      phi: "7–14 يومًا.",
+      usageRate: "20–30 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  39: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
+    image: "/assets/daygro.jpg",
+    en: {
+      title: "Daygro",
+      subtitle: "Diazinon 60% EC",
+      description:
+        "Daygro contains Diazinon 60% EC, an organophosphate insecticide with contact and stomach action that controls sucking, chewing, and soil-dwelling insects.",
+      features: [
+        "Broad-spectrum contact activity.",
+        "Effective against soil-dwelling pests.",
+        "Fast knockdown of target insects.",
+      ],
+      pestsControlled: [
+        "Aphids",
+        "Cutworms",
+        "Soil insects",
+        "Whiteflies",
+      ],
+      cropsUsedFor: ["Vegetables", "Field Crops", "Fruit Trees"],
+      activeIngredient: "Diazinon 60% EC",
+      phi: "14 days.",
+      usageRate: "100–150 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "داي جرو",
+      subtitle: "ديازينون 60% EC",
+      description:
+        "داي جرو يحتوي على ديازينون 60% EC، مبيد حشري فوسفوري عضوي ذو فعل تلامسي ومعوي يكافح الحشرات الماصة والقارضة وحشرات التربة.",
+      features: [
+        "فعالية تلامسية واسعة الطيف.",
+        "فعّال ضد الآفات التي تعيش في التربة.",
+        "إسقاط سريع للحشرات المستهدفة.",
+      ],
+      pestsControlled: [
+        "المن",
+        "دودة القطن (القارضة)",
+        "حشرات التربة",
+        "الذبابة البيضاء",
+      ],
+      cropsUsedFor: ["الخضروات", "المحاصيل الحقلية", "أشجار الفاكهة"],
+      activeIngredient: "ديازينون 60% EC",
+      phi: "14 يومًا.",
+      usageRate: "100–150 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  40: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
+    image: "/assets/dublegro.jpg",
+    en: {
+      title: "Dublegro",
+      subtitle: "Chlorpyrifos 24% + Lambda-Cyhalothrin 2.5% EC",
+      description:
+        "Dublegro combines Chlorpyrifos 24% and Lambda-Cyhalothrin 2.5% EC, an organophosphate/pyrethroid mixture that delivers fast knockdown together with long-lasting residual control.",
+      features: [
+        "Dual mode of action.",
+        "Fast knockdown and long residual effect.",
+        "Broad-spectrum insect control.",
+      ],
+      pestsControlled: [
+        "Aphids",
+        "Whiteflies",
+        "Caterpillars",
+        "Leafhoppers",
+      ],
+      cropsUsedFor: ["Cotton", "Vegetables", "Fruit Trees"],
+      activeIngredient: "Chlorpyrifos 24% + Lambda-Cyhalothrin 2.5% EC",
+      phi: "14 days.",
+      usageRate: "75–100 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "دبل جرو",
+      subtitle: "كلوربيرفوس 24% + لمبادا سيهالوثرين 2.5% EC",
+      description:
+        "دبل جرو يجمع بين كلوربيرفوس 24% ولمبادا سيهالوثرين 2.5% EC، مزيج فوسفوري عضوي وبيرثرويدي يعطي إسقاطًا سريعًا مع تأثير متبقي طويل المدى.",
+      features: [
+        "فعل مزدوج مركب.",
+        "إسقاط سريع وتأثير متبقي طويل.",
+        "مكافحة واسعة الطيف للحشرات.",
+      ],
+      pestsControlled: [
+        "المن",
+        "الذبابة البيضاء",
+        "الديدان (اليرقات)",
+        "نطاطات الأوراق",
+      ],
+      cropsUsedFor: ["القطن", "الخضروات", "أشجار الفاكهة"],
+      activeIngredient: "كلوربيرفوس 24% + لمبادا سيهالوثرين 2.5% EC",
+      phi: "14 يومًا.",
+      usageRate: "75–100 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  41: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide/Nematicide", ar: "مبيد حشري/نيماتودي" },
+    image: "/assets/fothiagro.jpg",
+    en: {
+      title: "Fothiagro",
+      subtitle: "Fosthiazate 40% EC",
+      description:
+        "Fothiagro contains Fosthiazate 40% EC, a systemic soil insecticide-nematicide that controls nematodes and soil-dwelling insects, protecting the root system throughout the season.",
+      features: [
+        "Systemic activity in the soil.",
+        "Controls nematodes and soil insects.",
+        "Long-lasting root protection.",
+      ],
+      pestsControlled: [
+        "Root-knot nematodes",
+        "Soil insects",
+        "Wireworms",
+      ],
+      cropsUsedFor: ["Potatoes", "Vegetables", "Sugar Beet"],
+      activeIngredient: "Fosthiazate 40% EC",
+      phi: "60 days (soil application before planting).",
+      usageRate: "2–3 liters per feddan as a soil drench/incorporation.",
+    },
+    ar: {
+      title: "فوثياجرو",
+      subtitle: "فوسثيازات 40% EC",
+      description:
+        "فوثياجرو يحتوي على فوسثيازات 40% EC، مبيد حشري ونيماتودي جهازي يعمل في التربة لمكافحة النيماتودا وحشرات التربة، ويحمي المجموع الجذري طوال الموسم.",
+      features: [
+        "فعالية جهازية داخل التربة.",
+        "يكافح النيماتودا وحشرات التربة.",
+        "حماية طويلة المدى للمجموع الجذري.",
+      ],
+      pestsControlled: [
+        "نيماتودا تعقد الجذور",
+        "حشرات التربة",
+        "الديدان السلكية",
+      ],
+      cropsUsedFor: ["البطاطس", "الخضروات", "بنجر السكر"],
+      activeIngredient: "فوسثيازات 40% EC",
+      phi: "60 يومًا (يُطبق على التربة قبل الزراعة).",
+      usageRate: "2–3 لتر لكل فدان خلطًا/تسميدًا بالتربة.",
+    },
+  },
+  42: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
+    image: "/assets/goldmil.png",
+    en: {
+      title: "Goldmil",
+      subtitle: "Methomyl 90% SP",
+      description:
+        "Goldmil contains Methomyl 90% SP, a fast-acting carbamate insecticide with contact and stomach action, giving strong knockdown against a broad range of insect pests.",
+      features: [
+        "Fast knockdown action.",
+        "Broad-spectrum insect control.",
+        "Effective against resistant strains.",
+      ],
+      pestsControlled: [
+        "Caterpillars",
+        "Aphids",
+        "Whiteflies",
+        "Leafminers",
+      ],
+      cropsUsedFor: ["Cotton", "Vegetables", "Fruit Trees"],
+      activeIngredient: "Methomyl 90% SP",
+      phi: "7 days.",
+      usageRate: "40 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "جولد ميل",
+      subtitle: "ميثوميل 90% SP",
+      description:
+        "جولد ميل يحتوي على ميثوميل 90% SP، مبيد حشري كارباماتي سريع المفعول ذو فعل تلامسي ومعوي، يعطي إسقاطًا قويًا لمجموعة واسعة من الحشرات.",
+      features: [
+        "فعل إسقاط سريع.",
+        "مكافحة واسعة الطيف للحشرات.",
+        "فعّال ضد السلالات المقاومة.",
+      ],
+      pestsControlled: [
+        "الديدان (اليرقات)",
+        "المن",
+        "الذبابة البيضاء",
+        "صانعات الأنفاق",
+      ],
+      cropsUsedFor: ["القطن", "الخضروات", "أشجار الفاكهة"],
+      activeIngredient: "ميثوميل 90% SP",
+      phi: "7 أيام.",
+      usageRate: "40 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  43: {
+    category: "herbicide",
+    categoryLabel: { en: "Herbicide", ar: "مبيد حشائش" },
+    image: "/assets/greenx.jpg",
+    en: {
+      title: "Greenx",
+      subtitle: "Glyphosate Isopropylamine 48% SL",
+      description:
+        "Greenx contains Glyphosate Isopropylamine 48% SL, a systemic non-selective herbicide that translocates to the roots, controlling a wide range of annual and perennial weeds.",
+      features: [
+        "Systemic root-level control.",
+        "Non-selective, broad-spectrum activity.",
+        "Effective on perennial weeds.",
+      ],
+      pestsControlled: [
+        "Bermuda grass",
+        "Nutsedge",
+        "Broadleaf weeds",
+        "Perennial grasses",
+      ],
+      cropsUsedFor: ["Orchards", "Non-crop areas", "Pre-planting fields"],
+      activeIngredient: "Glyphosate Isopropylamine 48% SL",
+      phi: "Non-crop / pre-planting use; not applicable to harvested produce.",
+      usageRate: "300–500 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "جرينكس",
+      subtitle: "جليفوسات إيزوبروبيل أمونيوم 48% SL",
+      description:
+        "جرينكس يحتوي على جليفوسات إيزوبروبيل أمونيوم 48% SL، مبيد حشائش جهازي غير انتقائي ينتقل إلى الجذور ويكافح مجموعة واسعة من الحشائش الحولية والمعمرة.",
+      features: [
+        "مكافحة جهازية على مستوى الجذر.",
+        "فعالية واسعة الطيف غير انتقائية.",
+        "فعّال ضد الحشائش المعمرة.",
+      ],
+      pestsControlled: [
+        "النجيل البلدي",
+        "السعد",
+        "الحشائش عريضة الأوراق",
+        "الحشائش النجيلية المعمرة",
+      ],
+      cropsUsedFor: ["البساتين", "الأراضي غير الزراعية", "الأراضي قبل الزراعة"],
+      activeIngredient: "جليفوسات إيزوبروبيل أمونيوم 48% SL",
+      phi: "استخدام قبل الزراعة أو في الأراضي غير الزراعية؛ غير مطبق على المحصول المحصود.",
+      usageRate: "300–500 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  44: {
+    category: "fungicide",
+    categoryLabel: { en: "Fungicide", ar: "مبيد فطري" },
+    image: "/assets/himexa-m.jpg",
+    en: {
+      title: "Himexa-M",
+      subtitle: "Hymexazol 30% + Metalaxyl-M 5% SL",
+      description:
+        "Himexa-M combines Hymexazol 30% and Metalaxyl-M 5% SL, a dual systemic seed and soil fungicide that protects seedlings from damping-off and other soil-borne pathogens.",
+      features: [
+        "Dual systemic action.",
+        "Protects seedlings from damping-off.",
+        "Controls soil-borne pathogens.",
+      ],
+      pestsControlled: ["Damping-off", "Root rot", "Pythium"],
+      cropsUsedFor: ["Vegetables", "Cotton", "Seedling Nurseries"],
+      activeIngredient: "Hymexazol 30% + Metalaxyl-M 5% SL",
+      phi: "Seed/soil treatment; not applicable at harvest.",
+      usageRate: "200–300 ml per 100 liters of water as a soil drench.",
+    },
+    ar: {
+      title: "هيمكسا-ام",
+      subtitle: "هيمكسازول 30% + ميتالاكسيل-ام 5% SL",
+      description:
+        "هيمكسا-ام يجمع بين هيمكسازول 30% وميتالاكسيل-ام 5% SL، مبيد فطري جهازي مزدوج لمعاملة البذور والتربة يحمي البادرات من أعفان سقوط البادرات ومسببات الأمراض الأخرى في التربة.",
+      features: [
+        "فعل جهازي مزدوج.",
+        "يحمي البادرات من سقوط البادرات.",
+        "يكافح مسببات الأمراض المحمولة بالتربة.",
+      ],
+      pestsControlled: ["سقوط البادرات", "عفن الجذور", "البيثيوم"],
+      cropsUsedFor: ["الخضروات", "القطن", "مشاتل البادرات"],
+      activeIngredient: "هيمكسازول 30% + ميتالاكسيل-ام 5% SL",
+      phi: "معاملة بذور/تربة؛ غير مطبق عند الحصاد.",
+      usageRate: "200–300 مل لكل 100 لتر ماء رشًا على التربة.",
+    },
+  },
+  45: {
+    category: "fungicide",
+    categoryLabel: { en: "Fungicide", ar: "مبيد فطري" },
+    image: "/assets/himexagro.jpg",
+    en: {
+      title: "Himexagro",
+      subtitle: "Hymexazol 30% SL",
+      description:
+        "Himexagro contains Hymexazol 30% SL, a systemic fungicide that protects young roots and seedlings from damping-off and other soil-borne fungal diseases.",
+      features: [
+        "Protects young roots from damping-off.",
+        "Systemic activity in the soil.",
+        "Improves seedling establishment.",
+      ],
+      pestsControlled: ["Damping-off", "Root rot"],
+      cropsUsedFor: ["Vegetables", "Cotton", "Seedling Nurseries"],
+      activeIngredient: "Hymexazol 30% SL",
+      phi: "Seed/soil treatment; not applicable at harvest.",
+      usageRate: "150–200 ml per 100 liters of water as a soil drench.",
+    },
+    ar: {
+      title: "هيمكساجرو",
+      subtitle: "هيمكسازول 30% SL",
+      description:
+        "هيمكساجرو يحتوي على هيمكسازول 30% SL، مبيد فطري جهازي يحمي الجذور الفتية والبادرات من سقوط البادرات وأمراض فطرية أخرى محمولة بالتربة.",
+      features: [
+        "يحمي الجذور الفتية من سقوط البادرات.",
+        "فعالية جهازية داخل التربة.",
+        "يحسّن نجاح إنبات البادرات.",
+      ],
+      pestsControlled: ["سقوط البادرات", "عفن الجذور"],
+      cropsUsedFor: ["الخضروات", "القطن", "مشاتل البادرات"],
+      activeIngredient: "هيمكسازول 30% SL",
+      phi: "معاملة بذور/تربة؛ غير مطبق عند الحصاد.",
+      usageRate: "150–200 مل لكل 100 لتر ماء رشًا على التربة.",
+    },
+  },
+  46: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/humicore.png",
+    en: {
+      title: "Humicore",
+      subtitle: "Potassium Humate 20%",
+      description:
+        "Humicore is a concentrated Potassium Humate 20% formulation that improves soil structure, boosts nutrient uptake efficiency, and stimulates healthy root development.",
+      features: [
+        "Improves soil structure and aeration.",
+        "Enhances nutrient uptake efficiency.",
+        "Stimulates root development.",
+      ],
+      pestsControlled: ["Poor Root Development", "Low Nutrient Uptake"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Potassium Humate 20%",
+      phi: "Not applicable (plant nutrient/soil conditioner).",
+      usageRate: "2–3 kg/feddan via soil (fertigation) application.",
+    },
+    ar: {
+      title: "هيوموكور",
+      subtitle: "هيومات البوتاسيوم 20%",
+      description:
+        "هيوموكور تركيبة مركزة من هيومات البوتاسيوم 20% تحسّن بنية التربة وتهويتها، وترفع كفاءة امتصاص العناصر الغذائية، وتحفّز نمو المجموع الجذري بصحة جيدة.",
+      features: [
+        "يحسّن بنية التربة وتهويتها.",
+        "يرفع كفاءة امتصاص العناصر الغذائية.",
+        "يحفّز نمو المجموع الجذري.",
+      ],
+      pestsControlled: ["ضعف نمو الجذور", "انخفاض امتصاص العناصر الغذائية"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "هيومات البوتاسيوم 20%",
+      phi: "غير مطبق (منتج تغذية نباتية/محسّن تربة).",
+      usageRate: "2–3 كجم لكل فدان تسميدًا بالتربة (فرتجيشن).",
+    },
+  },
+  47: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
+    image: "/assets/indogro.jpg",
+    en: {
+      title: "Indogro",
+      subtitle: "Indoxacarb 15% SC",
+      description:
+        "Indogro contains Indoxacarb 15% SC, an oxadiazine insecticide with contact and stomach action that stops feeding quickly and controls a wide range of lepidopteran larvae.",
+      features: [
+        "Effective against resistant caterpillars.",
+        "Fast cessation of feeding.",
+        "Favorable safety profile for beneficial insects.",
+      ],
+      pestsControlled: [
+        "Cotton leafworm",
+        "Diamondback moth",
+        "Tomato borer",
+        "Caterpillars",
+      ],
+      cropsUsedFor: ["Cotton", "Vegetables", "Fruit Trees"],
+      activeIngredient: "Indoxacarb 15% SC",
+      phi: "3–7 days.",
+      usageRate: "30–40 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "اندوجرو",
+      subtitle: "اندوكس كارب 15% SC",
+      description:
+        "اندوجرو يحتوي على اندوكس كارب 15% SC، مبيد حشري من مجموعة الأوكساديازين ذو فعل تلامسي ومعوي يوقف التغذية سريعًا ويكافح مجموعة واسعة من يرقات حرشفية الأجنحة.",
+      features: [
+        "فعّال ضد الديدان المقاومة.",
+        "إيقاف سريع للتغذية.",
+        "أمان جيد على الحشرات النافعة.",
+      ],
+      pestsControlled: [
+        "دودة ورق القطن",
+        "فراشة الماس",
+        "دودة ثمار الطماطم",
+        "الديدان (اليرقات)",
+      ],
+      cropsUsedFor: ["القطن", "الخضروات", "أشجار الفاكهة"],
+      activeIngredient: "اندوكس كارب 15% SC",
+      phi: "3–7 أيام.",
+      usageRate: "30–40 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  48: {
+    category: "fungicide",
+    categoryLabel: { en: "Fungicide", ar: "مبيد فطري" },
+    image: "/assets/mita-m.jpg",
+    en: {
+      title: "Mita-M",
+      subtitle: "Metalaxyl-M 48% EC",
+      description:
+        "Mita-M contains Metalaxyl-M 48% EC, a systemic fungicide targeting oomycete pathogens, offering strong preventive and curative control of downy mildew.",
+      features: [
+        "Systemic movement through plant tissue.",
+        "Strong activity against oomycete pathogens.",
+        "Preventive and curative control.",
+      ],
+      pestsControlled: ["Downy mildew", "Damping-off"],
+      cropsUsedFor: ["Grapes", "Vegetables", "Potatoes"],
+      activeIngredient: "Metalaxyl-M 48% EC",
+      phi: "7 days.",
+      usageRate: "20–30 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "ميتا-ام",
+      subtitle: "ميتالاكسيل-ام 48% EC",
+      description:
+        "ميتا-ام يحتوي على ميتالاكسيل-ام 48% EC، مبيد فطري جهازي يستهدف الفطريات البيضية، ويعطي مكافحة وقائية وعلاجية قوية للبياض الزغبي.",
+      features: [
+        "حركة جهازية عبر أنسجة النبات.",
+        "فعالية قوية ضد الفطريات البيضية.",
+        "مكافحة وقائية وعلاجية.",
+      ],
+      pestsControlled: ["البياض الزغبي", "سقوط البادرات"],
+      cropsUsedFor: ["العنب", "الخضروات", "البطاطس"],
+      activeIngredient: "ميتالاكسيل-ام 48% EC",
+      phi: "7 أيام.",
+      usageRate: "20–30 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  49: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/nutrex.png",
+    en: {
+      title: "Nutrex",
+      subtitle:
+        "Potassium Sulfate 15% + Potassium Humate 10% + Amino Acids 10% + Potassium Oxide 7%",
+      description:
+        "Nutrex is a balanced multi-component fertilizer combining potassium sources, humic acid, and amino acids to boost plant vigor, stress tolerance, and fruit quality.",
+      features: [
+        "Multi-source potassium nutrition.",
+        "Amino acids support stress recovery.",
+        "Improves fruit quality and yield.",
+      ],
+      pestsControlled: [
+        "Potassium Deficiency",
+        "Poor Fruit Quality",
+        "Stress Recovery",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient:
+        "Potassium Sulfate 15% + Potassium Humate 10% + Amino Acids 10% + Potassium Oxide 7%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate:
+        "2–3 kg/feddan via soil (fertigation) or 250–300 g per 100 liters as a foliar spray.",
+    },
+    ar: {
+      title: "نيوتركس",
+      subtitle:
+        "كبريتات البوتاسيوم 15% + هيومات البوتاسيوم 10% + أحماض أمينية 10% + أكسيد البوتاسيوم 7%",
+      description:
+        "نيوتركس سماد متعدد المكونات متوازن يجمع بين مصادر البوتاسيوم وحمض الهيوميك والأحماض الأمينية لتعزيز حيوية النبات وتحمّله للإجهاد وتحسين جودة الثمار.",
+      features: [
+        "تغذية بوتاسيومية من مصادر متعددة.",
+        "الأحماض الأمينية تدعم التعافي من الإجهاد.",
+        "يحسّن جودة الثمار والمحصول.",
+      ],
+      pestsControlled: [
+        "نقص البوتاسيوم",
+        "ضعف جودة الثمار",
+        "التعافي من الإجهاد",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient:
+        "كبريتات البوتاسيوم 15% + هيومات البوتاسيوم 10% + أحماض أمينية 10% + أكسيد البوتاسيوم 7%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate:
+        "2–3 كجم لكل فدان تسميدًا بالتربة أو 250–300 جم لكل 100 لتر رشًا على الأوراق.",
+    },
+  },
+  50: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide/Nematicide", ar: "مبيد حشري/نيماتودي" },
+    image: "/assets/oxigro.jpg",
+    en: {
+      title: "Oxigro",
+      subtitle: "Oxamyl 24% SL",
+      description:
+        "Oxigro contains Oxamyl 24% SL, a systemic carbamate insecticide-nematicide that is taken up through the roots and foliage to control sucking insects and nematodes.",
+      features: [
+        "Systemic root and foliar activity.",
+        "Controls nematodes and sucking insects.",
+        "Rapid uptake into plant tissue.",
+      ],
+      pestsControlled: [
+        "Aphids",
+        "Whiteflies",
+        "Nematodes",
+        "Mites",
+      ],
+      cropsUsedFor: ["Vegetables", "Potatoes", "Cotton"],
+      activeIngredient: "Oxamyl 24% SL",
+      phi: "14 days.",
+      usageRate:
+        "50–75 ml per 100 liters of water as a foliar spray or soil drench.",
+    },
+    ar: {
+      title: "اوكسي جرو",
+      subtitle: "اوكساميل 24% SL",
+      description:
+        "اوكسي جرو يحتوي على اوكساميل 24% SL، مبيد حشري ونيماتودي كارباماتي جهازي يمتصه النبات عبر الجذور والأوراق لمكافحة الحشرات الماصة والنيماتودا.",
+      features: [
+        "فعالية جهازية عبر الجذور والأوراق.",
+        "يكافح النيماتودا والحشرات الماصة.",
+        "امتصاص سريع داخل أنسجة النبات.",
+      ],
+      pestsControlled: [
+        "المن",
+        "الذبابة البيضاء",
+        "النيماتودا",
+        "الأكاروس (العناكب)",
+      ],
+      cropsUsedFor: ["الخضروات", "البطاطس", "القطن"],
+      activeIngredient: "اوكساميل 24% SL",
+      phi: "14 يومًا.",
+      usageRate: "50–75 مل لكل 100 لتر ماء رشًا على الأوراق أو للتربة.",
+    },
+  },
+  51: {
+    category: "insecticide",
+    categoryLabel: { en: "Nematicide/Insecticide", ar: "مبيد نيماتودي/حشري" },
+    image: "/assets/phinapro.jpg",
+    en: {
+      title: "Phinapro",
+      subtitle: "Fenamiphos 40% EC",
+      description:
+        "Phinapro contains Fenamiphos 40% EC, a systemic organophosphate nematicide-insecticide that gives soil-level control of nematodes and certain soil insects, protecting the root system.",
+      features: [
+        "Systemic nematode control.",
+        "Protects the root system.",
+        "Long-lasting soil activity.",
+      ],
+      pestsControlled: ["Root-knot nematodes", "Soil insects"],
+      cropsUsedFor: ["Vegetables", "Potatoes", "Fruit Trees"],
+      activeIngredient: "Fenamiphos 40% EC",
+      phi: "60 days (soil application).",
+      usageRate: "3–4 liters per feddan as a soil drench/incorporation.",
+    },
+    ar: {
+      title: "فينابرو",
+      subtitle: "فينامفوس 40% EC",
+      description:
+        "فينابرو يحتوي على فينامفوس 40% EC، مبيد نيماتودي وحشري فوسفوري عضوي جهازي يعمل في التربة لمكافحة النيماتودا وبعض حشرات التربة، ويحمي المجموع الجذري.",
+      features: [
+        "مكافحة جهازية للنيماتودا.",
+        "يحمي المجموع الجذري.",
+        "فعالية طويلة المدى في التربة.",
+      ],
+      pestsControlled: ["نيماتودا تعقد الجذور", "حشرات التربة"],
+      cropsUsedFor: ["الخضروات", "البطاطس", "أشجار الفاكهة"],
+      activeIngredient: "فينامفوس 40% EC",
+      phi: "60 يومًا (يُطبق على التربة).",
+      usageRate: "3–4 لتر لكل فدان خلطًا/تسميدًا بالتربة.",
+    },
+  },
+  52: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/potara.png",
+    en: {
+      title: "Potara",
+      subtitle: "Potassium Humate 10% (Suspension)",
+      description:
+        "Potara is a liquid suspension of Potassium Humate 10% that improves soil fertility and structure, enhances root growth, and increases nutrient availability.",
+      features: [
+        "Improves soil fertility and structure.",
+        "Enhances root growth.",
+        "Increases nutrient availability.",
+      ],
+      pestsControlled: ["Poor Root Development", "Low Soil Fertility"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Potassium Humate 10% (Suspension)",
+      phi: "Not applicable (soil conditioner/plant nutrient).",
+      usageRate: "3–4 liters/feddan via soil (fertigation) application.",
+    },
+    ar: {
+      title: "بوتارا",
+      subtitle: "هيومات البوتاسيوم 10% (معلق)",
+      description:
+        "بوتارا معلق سائل من هيومات البوتاسيوم 10% يحسّن خصوبة التربة وبنيتها، ويعزز نمو الجذور، ويزيد من إتاحة العناصر الغذائية.",
+      features: [
+        "يحسّن خصوبة التربة وبنيتها.",
+        "يعزز نمو الجذور.",
+        "يزيد من إتاحة العناصر الغذائية.",
+      ],
+      pestsControlled: ["ضعف نمو الجذور", "انخفاض خصوبة التربة"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "هيومات البوتاسيوم 10% (معلق)",
+      phi: "غير مطبق (محسّن تربة/منتج تغذية نباتية).",
+      usageRate: "3–4 لتر لكل فدان تسميدًا بالتربة (فرتجيشن).",
+    },
+  },
+  53: {
+    category: "fungicide",
+    categoryLabel: { en: "Fungicide", ar: "مبيد فطري" },
+    image: "/assets/profino.jpg",
+    en: {
+      title: "Profino",
+      subtitle: "Difenoconazole 25% + Propiconazole 25% EC",
+      description:
+        "Profino combines Difenoconazole 25% and Propiconazole 25% EC, a dual triazole fungicide with broad-spectrum protective and curative activity against fungal diseases.",
+      features: [
+        "Dual systemic triazole action.",
+        "Broad-spectrum disease control.",
+        "Extended residual protection.",
+      ],
+      pestsControlled: [
+        "Powdery mildew",
+        "Rust",
+        "Leaf spot",
+        "Scab",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Grapes"],
+      activeIngredient: "Difenoconazole 25% + Propiconazole 25% EC",
+      phi: "7–14 days.",
+      usageRate: "20 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "بروفينو",
+      subtitle: "دايفينوكونازول 25% + بروبيكونازول 25% EC",
+      description:
+        "بروفينو يجمع بين دايفينوكونازول 25% وبروبيكونازول 25% EC، مبيد فطري مزدوج من مجموعة الترايازول بفعالية وقائية وعلاجية واسعة الطيف ضد الأمراض الفطرية.",
+      features: [
+        "فعل جهازي مزدوج من مجموعة الترايازول.",
+        "مكافحة واسعة الطيف للأمراض الفطرية.",
+        "حماية متبقية ممتدة.",
+      ],
+      pestsControlled: [
+        "البياض الدقيقي",
+        "الصدأ",
+        "تبقع الأوراق",
+        "الجرب",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "العنب"],
+      activeIngredient: "دايفينوكونازول 25% + بروبيكونازول 25% EC",
+      phi: "7–14 يومًا.",
+      usageRate: "20 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  54: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/rootex.png",
+    en: {
+      title: "Rootex",
+      subtitle: "Potassium Humate 10%",
+      description:
+        "Rootex is a Potassium Humate 10% formulation that supports healthy root development while improving soil fertility, structure, and nutrient uptake efficiency.",
+      features: [
+        "Stimulates root development.",
+        "Improves soil structure.",
+        "Enhances nutrient uptake efficiency.",
+      ],
+      pestsControlled: ["Poor Root Development", "Low Soil Fertility"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Potassium Humate 10%",
+      phi: "Not applicable (soil conditioner/plant nutrient).",
+      usageRate: "2–3 kg/feddan via soil (fertigation) application.",
+    },
+    ar: {
+      title: "روتكس",
+      subtitle: "هيومات البوتاسيوم 10%",
+      description:
+        "روتكس تركيبة من هيومات البوتاسيوم 10% تدعم نمو الجذور بصحة جيدة مع تحسين خصوبة التربة وبنيتها وكفاءة امتصاص العناصر الغذائية.",
+      features: [
+        "يحفّز نمو الجذور.",
+        "يحسّن بنية التربة.",
+        "يرفع كفاءة امتصاص العناصر الغذائية.",
+      ],
+      pestsControlled: ["ضعف نمو الجذور", "انخفاض خصوبة التربة"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "هيومات البوتاسيوم 10%",
+      phi: "غير مطبق (محسّن تربة/منتج تغذية نباتية).",
+      usageRate: "2–3 كجم لكل فدان تسميدًا بالتربة (فرتجيشن).",
+    },
+  },
+  55: {
+    category: "insecticide",
+    categoryLabel: { en: "Insecticide/Acaricide", ar: "مبيد حشري/أكاروسي" },
+    image: "/assets/seproflow.jpg",
+    en: {
+      title: "Seproflow",
+      subtitle: "Spirotetramat 24% SC",
+      description:
+        "Seproflow contains Spirotetramat 24% SC, a two-way systemic insecticide moving both up and down within the plant, controlling all life stages of sucking insects and certain mites.",
+      features: [
+        "Two-way systemic movement.",
+        "Controls all life stages of target pests.",
+        "Long-lasting protection.",
+      ],
+      pestsControlled: [
+        "Aphids",
+        "Whiteflies",
+        "Mealybugs",
+        "Scale insects",
+      ],
+      cropsUsedFor: ["Citrus", "Vegetables", "Fruit Trees"],
+      activeIngredient: "Spirotetramat 24% SC",
+      phi: "7 days.",
+      usageRate: "40–50 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "سبروفلو",
+      subtitle: "سبيروتترامات 24% SC",
+      description:
+        "سبروفلو يحتوي على سبيروتترامات 24% SC، مبيد حشري جهازي ثنائي الاتجاه ينتقل صعودًا وهبوطًا داخل النبات، ويكافح جميع أطوار الحشرات الماصة وبعض أنواع الأكاروس.",
+      features: [
+        "حركة جهازية ثنائية الاتجاه.",
+        "يكافح جميع أطوار الآفة المستهدفة.",
+        "حماية طويلة المدى.",
+      ],
+      pestsControlled: [
+        "المن",
+        "الذبابة البيضاء",
+        "البق الدقيقي",
+        "الحشرات القشرية",
+      ],
+      cropsUsedFor: ["الموالح", "الخضروات", "أشجار الفاكهة"],
+      activeIngredient: "سبيروتترامات 24% SC",
+      phi: "7 أيام.",
+      usageRate: "40–50 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  56: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/vulkor.png",
+    en: {
+      title: "Vulkor",
+      subtitle: "Potassium Sulfate 24%",
+      description:
+        "Vulkor is a concentrated Potassium Sulfate 24% source that improves fruit quality, sugar content, and plant tolerance to stress, without adding chloride to the soil.",
+      features: [
+        "Chloride-free potassium source.",
+        "Improves fruit quality and sugar content.",
+        "Enhances stress tolerance.",
+      ],
+      pestsControlled: ["Potassium Deficiency", "Poor Fruit Quality"],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Potassium Sulfate 24%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "2–3 kg/feddan via soil (fertigation) application.",
+    },
+    ar: {
+      title: "فولكور",
+      subtitle: "كبريتات البوتاسيوم 24%",
+      description:
+        "فولكور مصدر مركز من كبريتات البوتاسيوم 24% يحسّن جودة الثمار ومحتواها السكري وتحمّل النبات للإجهاد، دون إضافة الكلوريد إلى التربة.",
+      features: [
+        "مصدر بوتاسيوم خالٍ من الكلوريد.",
+        "يحسّن جودة الثمار ومحتواها السكري.",
+        "يعزز تحمّل النبات للإجهاد.",
+      ],
+      pestsControlled: ["نقص البوتاسيوم", "ضعف جودة الثمار"],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "كبريتات البوتاسيوم 24%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "2–3 كجم لكل فدان تسميدًا بالتربة (فرتجيشن).",
+    },
+  },
 };
 
 // Products shown in the homepage auto-scrolling carousel.
