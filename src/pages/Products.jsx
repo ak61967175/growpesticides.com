@@ -88,7 +88,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="text-center mb-5">
+        <div className="filter-bar mb-5">
           {filters.map((f) => (
             <button
               key={f.value}

@@ -2313,6 +2313,500 @@ const products = {
       usageRate: "2–3 كجم لكل فدان تسميدًا بالتربة (فرتجيشن).",
     },
   },
+  57: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/bormix.png",
+    en: {
+      title: "Bormix",
+      subtitle: "Boron 15% + Molybdenum 1%",
+      description:
+        "Bormix is a micronutrient fertilizer supplying boron and molybdenum, two elements essential for flowering, pollen viability, fruit set, and nitrogen metabolism.",
+      features: [
+        "Improves flowering and fruit set.",
+        "Supports pollen viability.",
+        "Aids nitrogen metabolism via molybdenum.",
+      ],
+      pestsControlled: [
+        "Boron Deficiency",
+        "Molybdenum Deficiency",
+        "Poor Fruit Set",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Boron 15% + Molybdenum 1%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "150–250 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "بورميكس",
+      subtitle: "بورون 15% + موليبدنم 1%",
+      description:
+        "بورميكس سماد بالعناصر الصغرى يمد النبات بالبورون والموليبدنم، وهما عنصران أساسيان للإزهار وحيوية حبوب اللقاح وعقد الثمار وأيض النيتروجين.",
+      features: [
+        "يحسّن الإزهار وعقد الثمار.",
+        "يدعم حيوية حبوب اللقاح.",
+        "يساعد في أيض النيتروجين عبر الموليبدنم.",
+      ],
+      pestsControlled: [
+        "نقص البورون",
+        "نقص الموليبدنم",
+        "ضعف عقد الثمار",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "بورون 15% + موليبدنم 1%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "150–250 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  58: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/borocal.png",
+    en: {
+      title: "Borocal",
+      subtitle: "Calcium 18% + Boron 1%",
+      description:
+        "Borocal combines calcium and boron to strengthen cell walls, reduce fruit cracking and blossom-end rot, and support proper flower and fruit development.",
+      features: [
+        "Strengthens cell walls.",
+        "Reduces fruit cracking and blossom-end rot.",
+        "Supports flower and fruit development.",
+      ],
+      pestsControlled: [
+        "Calcium Deficiency",
+        "Blossom-End Rot",
+        "Fruit Cracking",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Calcium 18% + Boron 1%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "200–300 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "بوروكال",
+      subtitle: "كالسيوم 18% + بورون 1%",
+      description:
+        "بوروكال تركيبة من الكالسيوم والبورون تقوي جدران الخلايا وتقلل من تشقق الثمار وتعفن الطرف الزهري، وتدعم النمو السليم للأزهار والثمار.",
+      features: [
+        "يقوي جدران الخلايا.",
+        "يقلل من تشقق الثمار وتعفن الطرف الزهري.",
+        "يدعم نمو الأزهار والثمار.",
+      ],
+      pestsControlled: [
+        "نقص الكالسيوم",
+        "تعفن الطرف الزهري",
+        "تشقق الثمار",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "كالسيوم 18% + بورون 1%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "200–300 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  59: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/grocam.png",
+    en: {
+      title: "Grocam",
+      subtitle: "Indole-3-Butyric Acid (IBA) 2%",
+      description:
+        "Grocam is a root-stimulating plant hormone that promotes fast, dense root formation in cuttings, transplants, and stressed plants.",
+      features: [
+        "Stimulates fast root initiation.",
+        "Improves transplant establishment.",
+        "Increases root mass and density.",
+      ],
+      pestsControlled: ["Poor Root Development", "Transplant Shock"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Nurseries"],
+      activeIngredient: "Indole-3-Butyric Acid (IBA) 2%",
+      phi: "Not applicable (plant growth stimulant).",
+      usageRate: "20–30 ml per 100 liters of water as a soil drench/dip.",
+    },
+    ar: {
+      title: "جروكام",
+      subtitle: "حمض الإندول بيوتريك (IBA) 2%",
+      description:
+        "جروكام هرمون نباتي محفز للتجذير يعزز تكوين جذور سريعة وكثيفة في العقل والشتلات المنقولة والنباتات المجهدة.",
+      features: [
+        "يحفز بدء تكوين الجذور سريعًا.",
+        "يحسّن نجاح الشتلات المنقولة.",
+        "يزيد من كتلة وكثافة الجذور.",
+      ],
+      pestsControlled: ["ضعف نمو الجذور", "إجهاد نقل الشتلات"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المشاتل"],
+      activeIngredient: "حمض الإندول بيوتريك (IBA) 2%",
+      phi: "غير مطبق (محفز نمو نباتي).",
+      usageRate: "20–30 مل لكل 100 لتر ماء غمسًا أو ريًا للتربة.",
+    },
+  },
+  60: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/magnical.png",
+    en: {
+      title: "Magnical",
+      subtitle: "Calcium 16% + Magnesium 8% + Nitrogen 10%",
+      description:
+        "Magnical is a combined calcium-magnesium-nitrogen fertilizer that strengthens plant tissue, corrects magnesium-related chlorosis, and supports overall growth.",
+      features: [
+        "Strengthens cell walls and fruit firmness.",
+        "Corrects magnesium-related leaf chlorosis.",
+        "Supports balanced vegetative growth.",
+      ],
+      pestsControlled: [
+        "Calcium Deficiency",
+        "Magnesium Deficiency",
+        "Leaf Chlorosis",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Calcium 16% + Magnesium 8% + Nitrogen 10%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "250–300 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "ماجنيكال",
+      subtitle: "كالسيوم 16% + مغنسيوم 8% + نيتروجين 10%",
+      description:
+        "ماجنيكال سماد مركب من الكالسيوم والمغنسيوم والنيتروجين يقوي أنسجة النبات، ويعالج اصفرار الأوراق الناتج عن نقص المغنسيوم، ويدعم النمو الخضري المتوازن.",
+      features: [
+        "يقوي جدران الخلايا وصلابة الثمار.",
+        "يعالج اصفرار الأوراق الناتج عن نقص المغنسيوم.",
+        "يدعم النمو الخضري المتوازن.",
+      ],
+      pestsControlled: [
+        "نقص الكالسيوم",
+        "نقص المغنسيوم",
+        "اصفرار الأوراق",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "كالسيوم 16% + مغنسيوم 8% + نيتروجين 10%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "250–300 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  61: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/magnix.png",
+    en: {
+      title: "Magnix",
+      subtitle: "Magnesium Nitrate 31%",
+      description:
+        "Magnix is a concentrated magnesium nitrate source that quickly corrects magnesium deficiency, restoring healthy green leaf color and supporting chlorophyll production.",
+      features: [
+        "Rapid correction of magnesium deficiency.",
+        "Restores healthy green leaf color.",
+        "Supports chlorophyll production.",
+      ],
+      pestsControlled: ["Magnesium Deficiency", "Leaf Chlorosis"],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Magnesium Nitrate 31%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "200–250 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "ماجنيكس",
+      subtitle: "نترات مغنسيوم 31%",
+      description:
+        "ماجنيكس مصدر مركز من نترات المغنسيوم يعالج نقص المغنسيوم بسرعة، ويعيد اللون الأخضر الصحي للأوراق، ويدعم إنتاج الكلوروفيل.",
+      features: [
+        "علاج سريع لنقص المغنسيوم.",
+        "يعيد اللون الأخضر الصحي للأوراق.",
+        "يدعم إنتاج الكلوروفيل.",
+      ],
+      pestsControlled: ["نقص المغنسيوم", "اصفرار الأوراق"],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "نترات مغنسيوم 31%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "200–250 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  62: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/microvex.png",
+    en: {
+      title: "Microvex",
+      subtitle: "Chelated Micronutrient Mix",
+      description:
+        "Microvex is a balanced blend of chelated micronutrients (iron, zinc, manganese, copper, boron) that corrects multiple trace-element deficiencies at once and supports healthy growth.",
+      features: [
+        "Corrects multiple micronutrient deficiencies at once.",
+        "Chelated form for better absorption.",
+        "Supports overall plant vigor.",
+      ],
+      pestsControlled: [
+        "Micronutrient Deficiency",
+        "Leaf Chlorosis",
+        "Poor Growth",
+      ],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Chelated Micronutrient Mix",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "150–200 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "ميكروڤيكس",
+      subtitle: "خليط عناصر صغرى مخلبية",
+      description:
+        "ميكروڤيكس خليط متوازن من العناصر الصغرى المخلبية (حديد، زنك، منجنيز، نحاس، بورون) يعالج نقص عدة عناصر صغرى دفعة واحدة ويدعم النمو الصحي.",
+      features: [
+        "يعالج نقص عدة عناصر صغرى في آن واحد.",
+        "صيغة مخلبية لامتصاص أفضل.",
+        "يدعم حيوية النبات بشكل عام.",
+      ],
+      pestsControlled: [
+        "نقص العناصر الصغرى",
+        "اصفرار الأوراق",
+        "ضعف النمو",
+      ],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "خليط عناصر صغرى مخلبية",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "150–200 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  63: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/nitro-k.png",
+    en: {
+      title: "Nitro-K",
+      subtitle: "Potassium Nitrate 31%",
+      description:
+        "Nitro-K is a fully water-soluble potassium nitrate that supplies potassium and nitrogen together, boosting fruit quality, sugar content, and overall plant vigor.",
+      features: [
+        "Fully water-soluble.",
+        "Boosts fruit quality and sugar content.",
+        "Supplies potassium and nitrogen together.",
+      ],
+      pestsControlled: ["Potassium Deficiency", "Poor Fruit Quality"],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Potassium Nitrate 31%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "300–400 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "نيترو-كي",
+      subtitle: "نترات بوتاسيوم 31%",
+      description:
+        "نيترو-كي نترات بوتاسيوم كاملة الذوبان تمد النبات بالبوتاسيوم والنيتروجين معًا، مما يعزز جودة الثمار ومحتواها السكري وحيوية النبات العامة.",
+      features: [
+        "كامل الذوبان في الماء.",
+        "يعزز جودة الثمار ومحتواها السكري.",
+        "يمد النبات بالبوتاسيوم والنيتروجين معًا.",
+      ],
+      pestsControlled: ["نقص البوتاسيوم", "ضعف جودة الثمار"],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "نترات بوتاسيوم 31%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "300–400 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  64: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/potrix.png",
+    en: {
+      title: "Potrix",
+      subtitle: "Potassium Citrate 31%",
+      description:
+        "Potrix is a chloride-free potassium citrate source that is rapidly absorbed, improving fruit size, quality, and plant resistance to stress.",
+      features: [
+        "Chloride-free, rapidly absorbed potassium.",
+        "Improves fruit size and quality.",
+        "Enhances plant resistance to stress.",
+      ],
+      pestsControlled: ["Potassium Deficiency", "Poor Fruit Quality"],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Potassium Citrate 31%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "250–300 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "بوتريكس",
+      subtitle: "سترات بوتاسيوم 31%",
+      description:
+        "بوتريكس مصدر بوتاسيوم من سترات البوتاسيوم خالٍ من الكلوريد وسريع الامتصاص، يحسّن حجم الثمار وجودتها ومقاومة النبات للإجهاد.",
+      features: [
+        "بوتاسيوم خالٍ من الكلوريد وسريع الامتصاص.",
+        "يحسّن حجم الثمار وجودتها.",
+        "يعزز مقاومة النبات للإجهاد.",
+      ],
+      pestsControlled: ["نقص البوتاسيوم", "ضعف جودة الثمار"],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "سترات بوتاسيوم 31%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "250–300 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  65: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/silvora.png",
+    en: {
+      title: "Silvora",
+      subtitle: "Silicate 35% + Potassium 25%",
+      description:
+        "Silvora is a potassium silicate formulation that strengthens cell walls, improves plant resistance to stress and disease, and boosts potassium nutrition.",
+      features: [
+        "Strengthens cell walls.",
+        "Improves resistance to stress and disease.",
+        "Boosts potassium nutrition.",
+      ],
+      pestsControlled: [
+        "Weak Cell Structure",
+        "Potassium Deficiency",
+        "Low Stress Tolerance",
+      ],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Silicate 35% + Potassium 25%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "200–300 ml per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "سيلڤورا",
+      subtitle: "سيليكات 35% + بوتاسيوم 25%",
+      description:
+        "سيلڤورا تركيبة من سيليكات البوتاسيوم تقوي جدران الخلايا وتحسّن مقاومة النبات للإجهاد والأمراض، وتعزز التغذية بالبوتاسيوم.",
+      features: [
+        "يقوي جدران الخلايا.",
+        "يحسّن مقاومة الإجهاد والأمراض.",
+        "يعزز التغذية بالبوتاسيوم.",
+      ],
+      pestsControlled: [
+        "ضعف بنية الخلايا",
+        "نقص البوتاسيوم",
+        "انخفاض تحمل الإجهاد",
+      ],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "سيليكات 35% + بوتاسيوم 25%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "200–300 مل لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  66: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/triomax.png",
+    en: {
+      title: "Triomax",
+      subtitle: "NPK 20-20-20 (Water Soluble)",
+      description:
+        "Triomax is a balanced, fully water-soluble NPK fertilizer supplying equal ratios of nitrogen, phosphorus, and potassium for steady, all-round plant growth.",
+      features: [
+        "Balanced N-P-K ratio.",
+        "Fully water-soluble.",
+        "Supports steady, all-round growth.",
+      ],
+      pestsControlled: [
+        "General Nutrient Deficiency",
+        "Poor Vegetative Growth",
+      ],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "NPK 20-20-20",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "300–400 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "تريوماكس",
+      subtitle: "NPK 20-20-20 (كامل الذوبان)",
+      description:
+        "تريوماكس سماد NPK متوازن كامل الذوبان في الماء يمد النبات بنسب متساوية من النيتروجين والفوسفور والبوتاسيوم لدعم نمو ثابت ومتكامل.",
+      features: [
+        "نسبة متوازنة من NPK.",
+        "كامل الذوبان في الماء.",
+        "يدعم نموًا ثابتًا ومتكاملاً.",
+      ],
+      pestsControlled: [
+        "نقص العناصر الغذائية العام",
+        "ضعف النمو الخضري",
+      ],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "NPK 20-20-20",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "300–400 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  67: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/fostra.png",
+    en: {
+      title: "Fostra",
+      subtitle: "Potassium 36% + Phosphorus 24%",
+      description:
+        "Fostra is a high-phosphorus, high-potassium fertilizer that promotes strong root development, flowering, and fruit setting.",
+      features: [
+        "Promotes strong root development.",
+        "Boosts flowering and fruit setting.",
+        "High phosphorus and potassium content.",
+      ],
+      pestsControlled: [
+        "Phosphorus Deficiency",
+        "Potassium Deficiency",
+        "Poor Flowering",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Potassium 36% + Phosphorus 24%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate: "250–300 g per 100 liters of water as a foliar spray.",
+    },
+    ar: {
+      title: "فوسترا",
+      subtitle: "بوتاسيوم 36% + فوسفور 24%",
+      description:
+        "فوسترا سماد غني بالفوسفور والبوتاسيوم يعزز نمو الجذور القوي والإزهار وعقد الثمار.",
+      features: [
+        "يعزز نمو الجذور القوي.",
+        "يحفّز الإزهار وعقد الثمار.",
+        "محتوى مرتفع من الفوسفور والبوتاسيوم.",
+      ],
+      pestsControlled: [
+        "نقص الفوسفور",
+        "نقص البوتاسيوم",
+        "ضعف الإزهار",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "بوتاسيوم 36% + فوسفور 24%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "250–300 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
 };
 
 // Products shown in the homepage auto-scrolling carousel.
