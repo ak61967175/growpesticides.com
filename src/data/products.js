@@ -361,46 +361,6 @@ const products = {
       usageRate: "30–40 مل لكل 100 لتر ماء رشًا على الأوراق.",
     },
   },
-  10: {
-    category: "Nutrients & micronutrients",
-    categoryLabel: {
-      en: "Nutrients & micronutrients",
-      ar: "المغذيات والعناصر الصغرى",
-    },
-    image: "/assets/Iron.png",
-    en: {
-      title: "Grow Iron",
-      subtitle: "Iron EDDHA 6% ortho ortho",
-      description:
-        "Grow Iron contains Iron EDDHA 6% ortho-ortho used to correct iron deficiency and improve plant growth.",
-      features: [
-        "Highly stable chelated iron.",
-        "Quick correction of chlorosis.",
-        "Improves leaf color.",
-      ],
-      pestsControlled: ["Iron Chlorosis"],
-      cropsUsedFor: ["Citrus", "Grapes", "Vegetables"],
-      activeIngredient: "Iron EDDHA 6% ortho ortho",
-      phi: "Not applicable (plant nutrient product).",
-      usageRate: "2–3 kg/feddan via soil (fertigation) application.",
-    },
-    ar: {
-      title: "جرو أيرون",
-      subtitle: "حديد EDDHA 6% أورثو أورثو",
-      description:
-        "جرو أيرون يحتوي على حديد مخلبي EDDHA 6% أورثو أورثو يُستخدم لعلاج نقص الحديد وتحسين نمو النبات.",
-      features: [
-        "حديد مخلبي عالي الثبات.",
-        "علاج سريع لاصفرار الأوراق.",
-        "يحسّن لون الأوراق.",
-      ],
-      pestsControlled: ["اصفرار الأوراق (نقص الحديد)"],
-      cropsUsedFor: ["الموالح", "العنب", "الخضروات"],
-      activeIngredient: "حديد EDDHA 6% أورثو أورثو",
-      phi: "غير مطبق (منتج تغذية نباتية).",
-      usageRate: "2–3 كجم/فدان عن طريق التربة (التسميد بمياه الري).",
-    },
-  },
   11: {
     category: "insecticide",
     categoryLabel: { en: "Insecticide", ar: "مبيد حشري" },
@@ -473,86 +433,6 @@ const products = {
       activeIngredient: "كاربندازيم 50% SC",
       phi: "14 يومًا.",
       usageRate: "30–50 مل لكل 100 لتر ماء رشًا على الأوراق.",
-    },
-  },
-  13: {
-    category: "Nutrients & micronutrients",
-    categoryLabel: {
-      en: "Nutrients & micronutrients",
-      ar: "المغذيات والعناصر الصغرى",
-    },
-    image: "/assets/micromix.png",
-    en: {
-      title: "MicroMix Plus",
-      subtitle: "Chelated micronutrient mix",
-      description:
-        "MicroMix Plus is a blend of micronutrients chelated with EDTA for improved plant nutrition.",
-      features: [
-        "Balanced micronutrient formula.",
-        "High absorption rate.",
-        "Improves plant growth.",
-      ],
-      pestsControlled: ["Micronutrient deficiency"],
-      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
-      activeIngredient: "Chelated micronutrient mix",
-      phi: "Not applicable (plant nutrient product).",
-      usageRate: "100–150 g per 100 liters of water as a foliar spray.",
-    },
-    ar: {
-      title: "مايكرو ميكس بلس",
-      subtitle: "خليط عناصر صغرى مخلبية",
-      description:
-        "مايكرو ميكس بلس خليط من العناصر الصغرى المخلبة بـ EDTA لتحسين تغذية النبات.",
-      features: [
-        "تركيبة متوازنة من العناصر الصغرى.",
-        "معدل امتصاص عالٍ.",
-        "يحسّن نمو النبات.",
-      ],
-      pestsControlled: ["نقص العناصر الصغرى"],
-      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
-      activeIngredient: "خليط عناصر صغرى مخلبية",
-      phi: "غير مطبق (منتج تغذية نباتية).",
-      usageRate: "100–150 جم لكل 100 لتر ماء رشًا على الأوراق.",
-    },
-  },
-  14: {
-    category: "Nutrients & micronutrients",
-    categoryLabel: {
-      en: "Nutrients & micronutrients",
-      ar: "المغذيات والعناصر الصغرى",
-    },
-    image: "/assets/mn.png",
-    en: {
-      title: "GROW Mn",
-      subtitle: "Manganese EDTA 13%",
-      description:
-        "GROW Mn provides manganese EDTA 13% to improve photosynthesis and plant enzyme activity.",
-      features: [
-        "Corrects manganese deficiency.",
-        "Improves photosynthesis.",
-        "Enhances plant growth.",
-      ],
-      pestsControlled: ["Manganese deficiency"],
-      cropsUsedFor: ["Vegetables", "Citrus"],
-      activeIngredient: "Manganese EDTA 13%",
-      phi: "Not applicable (plant nutrient product).",
-      usageRate: "100–150 g per 100 liters of water as a foliar spray.",
-    },
-    ar: {
-      title: "جرو منجنيز",
-      subtitle: "منجنيز EDTA 13%",
-      description:
-        "جرو منجنيز يوفر منجنيز مخلبي EDTA 13% لتحسين عملية البناء الضوئي ونشاط الإنزيمات النباتية.",
-      features: [
-        "يعالج نقص المنجنيز.",
-        "يحسّن عملية البناء الضوئي.",
-        "يعزز نمو النبات.",
-      ],
-      pestsControlled: ["نقص المنجنيز"],
-      cropsUsedFor: ["الخضروات", "الموالح"],
-      activeIngredient: "منجنيز EDTA 13%",
-      phi: "غير مطبق (منتج تغذية نباتية).",
-      usageRate: "100–150 جم لكل 100 لتر ماء رشًا على الأوراق.",
     },
   },
   15: {
@@ -630,46 +510,6 @@ const products = {
       activeIngredient: "ثيوفانات ميثيل 70% SC",
       phi: "14 يومًا.",
       usageRate: "40–50 مل لكل 100 لتر ماء رشًا على الأوراق.",
-    },
-  },
-  17: {
-    category: "Nutrients & micronutrients",
-    categoryLabel: {
-      en: "Nutrients & micronutrients",
-      ar: "المغذيات والعناصر الصغرى",
-    },
-    image: "/assets/zink.png",
-    en: {
-      title: "GROW Zink",
-      subtitle: "Zinc EDTA 13%",
-      description:
-        "GROW Zink contains Zinc EDTA 13% to correct zinc deficiency and improve plant growth.",
-      features: [
-        "Corrects zinc deficiency.",
-        "Improves plant development.",
-        "Highly available zinc.",
-      ],
-      pestsControlled: ["Zinc deficiency"],
-      cropsUsedFor: ["Vegetables", "Corn"],
-      activeIngredient: "Zinc EDTA 13%",
-      phi: "Not applicable (plant nutrient product).",
-      usageRate: "100–150 g per 100 liters of water as a foliar spray.",
-    },
-    ar: {
-      title: "جرو زنك",
-      subtitle: "زنك EDTA 13%",
-      description:
-        "جرو زنك يحتوي على زنك مخلبي EDTA 13% لعلاج نقص الزنك وتحسين نمو النبات.",
-      features: [
-        "يعالج نقص الزنك.",
-        "يحسّن تطور النبات.",
-        "زنك عالي التيسر للامتصاص.",
-      ],
-      pestsControlled: ["نقص الزنك"],
-      cropsUsedFor: ["الخضروات", "الذرة"],
-      activeIngredient: "زنك EDTA 13%",
-      phi: "غير مطبق (منتج تغذية نباتية).",
-      usageRate: "100–150 جم لكل 100 لتر ماء رشًا على الأوراق.",
     },
   },
   18: {
@@ -2805,6 +2645,318 @@ const products = {
       activeIngredient: "بوتاسيوم 36% + فوسفور 24%",
       phi: "غير مطبق (منتج تغذية نباتية).",
       usageRate: "250–300 جم لكل 100 لتر ماء رشًا على الأوراق.",
+    },
+  },
+  68: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/feropower.png",
+    en: {
+      title: "Feropower",
+      subtitle: "Iron (Fe) 13%",
+      description:
+        "Feropower is a concentrated iron micronutrient fertilizer that quickly corrects iron deficiency chlorosis and restores healthy green foliage.",
+      features: [
+        "Rapid correction of iron deficiency.",
+        "Restores healthy green leaf color.",
+        "High-concentration, readily available iron.",
+      ],
+      pestsControlled: ["Iron Deficiency", "Leaf Chlorosis"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Iron (Fe) 13%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate:
+        "100 g per 100 liters of water as a foliar spray, or 1 kg per feddan via soil application.",
+    },
+    ar: {
+      title: "فيرو باور",
+      subtitle: "حديد (Fe) 13%",
+      description:
+        "فيرو باور سماد بالعناصر الصغرى مركز من الحديد يعالج نقص الحديد (الاصفرار) بسرعة ويعيد اللون الأخضر الصحي للمجموع الخضري.",
+      features: [
+        "علاج سريع لنقص الحديد.",
+        "يعيد اللون الأخضر الصحي للأوراق.",
+        "تركيز عالٍ من الحديد سهل الامتصاص.",
+      ],
+      pestsControlled: ["نقص الحديد", "اصفرار الأوراق"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "حديد (Fe) 13%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate:
+        "100 جم لكل 100 لتر ماء رشًا على الأوراق، أو 1 كجم للفدان عن طريق التربة.",
+    },
+  },
+  69: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/manganesepower.png",
+    en: {
+      title: "Manganese Power",
+      subtitle: "Manganese (Mn) 13%",
+      description:
+        "Manganese Power is a concentrated manganese fertilizer that corrects manganese deficiency, supporting photosynthesis and enzyme activity within the plant.",
+      features: [
+        "Corrects manganese deficiency.",
+        "Supports photosynthesis and enzyme activity.",
+        "High-concentration, readily available manganese.",
+      ],
+      pestsControlled: ["Manganese Deficiency", "Leaf Chlorosis"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Manganese (Mn) 13%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate:
+        "100 g per 100 liters of water as a foliar spray, or 1 kg per feddan via soil application.",
+    },
+    ar: {
+      title: "منجنيز باور",
+      subtitle: "منجنيز (Mn) 13%",
+      description:
+        "منجنيز باور سماد مركز من المنجنيز يعالج نقص المنجنيز، ويدعم عملية البناء الضوئي ونشاط الإنزيمات داخل النبات.",
+      features: [
+        "يعالج نقص المنجنيز.",
+        "يدعم البناء الضوئي ونشاط الإنزيمات.",
+        "تركيز عالٍ من المنجنيز سهل الامتصاص.",
+      ],
+      pestsControlled: ["نقص المنجنيز", "اصفرار الأوراق"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "منجنيز (Mn) 13%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate:
+        "100 جم لكل 100 لتر ماء رشًا على الأوراق، أو 1 كجم للفدان عن طريق التربة.",
+    },
+  },
+  70: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/zinkpower.png",
+    en: {
+      title: "Zinkpower",
+      subtitle: "Zinc (Zn) 13%",
+      description:
+        "Zinkpower is a concentrated zinc fertilizer that corrects zinc deficiency, supporting hormone balance and healthy shoot and leaf development.",
+      features: [
+        "Corrects zinc deficiency.",
+        "Supports plant hormone balance.",
+        "Promotes healthy shoot and leaf development.",
+      ],
+      pestsControlled: ["Zinc Deficiency", "Stunted Growth"],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient: "Zinc (Zn) 13%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate:
+        "100 g per 100 liters of water as a foliar spray, or 1 kg per feddan via soil application.",
+    },
+    ar: {
+      title: "زنك باور",
+      subtitle: "زنك (Zn) 13%",
+      description:
+        "زنك باور سماد مركز من الزنك يعالج نقص الزنك، ويدعم توازن الهرمونات ونمو الأفرع والأوراق بشكل صحي.",
+      features: [
+        "يعالج نقص الزنك.",
+        "يدعم توازن الهرمونات النباتية.",
+        "يعزز نمو الأفرع والأوراق بشكل صحي.",
+      ],
+      pestsControlled: ["نقص الزنك", "تقزم النمو"],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient: "زنك (Zn) 13%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate:
+        "100 جم لكل 100 لتر ماء رشًا على الأوراق، أو 1 كجم للفدان عن طريق التربة.",
+    },
+  },
+  71: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/flowpower.png",
+    en: {
+      title: "Flowpower",
+      subtitle: "Zinc 3% + Boron 5% + Molybdenum 2%",
+      description:
+        "Flowpower is a combined micronutrient formulation that supports flowering, pollen viability, and fruit set through balanced zinc, boron, and molybdenum nutrition.",
+      features: [
+        "Supports flowering and pollen viability.",
+        "Improves fruit set.",
+        "Balanced multi-micronutrient nutrition.",
+      ],
+      pestsControlled: [
+        "Poor Flowering",
+        "Zinc/Boron/Molybdenum Deficiency",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables", "Field Crops"],
+      activeIngredient: "Zinc 3% + Boron 5% + Molybdenum 2%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate:
+        "20 g per 100 liters of water as a foliar spray, or 200 g per feddan.",
+    },
+    ar: {
+      title: "فلو باور",
+      subtitle: "زنك 3% + بورون 5% + موليبدنم 2%",
+      description:
+        "فلو باور تركيبة مركبة من العناصر الصغرى تدعم الإزهار وحيوية حبوب اللقاح وعقد الثمار من خلال تغذية متوازنة بالزنك والبورون والموليبدنم.",
+      features: [
+        "يدعم الإزهار وحيوية حبوب اللقاح.",
+        "يحسّن عقد الثمار.",
+        "تغذية متوازنة متعددة العناصر الصغرى.",
+      ],
+      pestsControlled: [
+        "ضعف الإزهار",
+        "نقص الزنك والبورون والموليبدنم",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات", "المحاصيل الحقلية"],
+      activeIngredient: "زنك 3% + بورون 5% + موليبدنم 2%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "20 جم لكل 100 لتر ماء رشًا على الأوراق، أو 200 جم للفدان.",
+    },
+  },
+  72: {
+    category: "Nutrients & micronutrients",
+    categoryLabel: {
+      en: "Nutrients & micronutrients",
+      ar: "المغذيات والعناصر الصغرى",
+    },
+    image: "/assets/mixpower.png",
+    en: {
+      title: "Mixpower",
+      subtitle:
+        "Zinc 4% + Iron 4% + Manganese 4% + Magnesium 4% + Copper 2% + Boron 1.4%",
+      description:
+        "Mixpower is a comprehensive multi-micronutrient blend that corrects several trace-element deficiencies at once for balanced, healthy plant growth.",
+      features: [
+        "Corrects multiple micronutrient deficiencies at once.",
+        "Balanced multi-element formula.",
+        "Supports overall plant vigor.",
+      ],
+      pestsControlled: [
+        "Multiple Micronutrient Deficiency",
+        "Leaf Chlorosis",
+        "Poor Growth",
+      ],
+      cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
+      activeIngredient:
+        "Zinc 4% + Iron 4% + Manganese 4% + Magnesium 4% + Copper 2% + Boron 1.4%",
+      phi: "Not applicable (plant nutrient product).",
+      usageRate:
+        "100 g per 100 liters of water as a foliar spray, or 1 kg per feddan.",
+    },
+    ar: {
+      title: "مكس باور",
+      subtitle:
+        "زنك 4% + حديد 4% + منجنيز 4% + مغنسيوم 4% + نحاس 2% + بورون 1.4%",
+      description:
+        "مكس باور خليط شامل من العناصر الصغرى المتعددة يعالج نقص عدة عناصر دفعة واحدة لدعم نمو متوازن وصحي للنبات.",
+      features: [
+        "يعالج نقص عدة عناصر صغرى في آن واحد.",
+        "تركيبة متوازنة متعددة العناصر.",
+        "يدعم حيوية النبات بشكل عام.",
+      ],
+      pestsControlled: [
+        "نقص عناصر صغرى متعددة",
+        "اصفرار الأوراق",
+        "ضعف النمو",
+      ],
+      cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
+      activeIngredient:
+        "زنك 4% + حديد 4% + منجنيز 4% + مغنسيوم 4% + نحاس 2% + بورون 1.4%",
+      phi: "غير مطبق (منتج تغذية نباتية).",
+      usageRate: "100 جم لكل 100 لتر ماء رشًا على الأوراق، أو 1 كجم للفدان.",
+    },
+  },
+  73: {
+    category: "growth-regulator",
+    categoryLabel: { en: "Growth Regulator", ar: "منظم نمو نباتي" },
+    image: "/assets/cytogro.png",
+    en: {
+      title: "Cytogro",
+      subtitle: "CPPU (Forchlorfenuron) 1%",
+      description:
+        "Cytogro is a synthetic cytokinin plant growth regulator that promotes cell division, increasing fruit size and improving fruit set.",
+      features: [
+        "Promotes cell division for larger fruit.",
+        "Improves fruit set and uniformity.",
+        "Enhances yield potential.",
+      ],
+      pestsControlled: ["Small Fruit Size", "Poor Fruit Set"],
+      cropsUsedFor: ["Fruit Trees", "Vegetables"],
+      activeIngredient: "CPPU (Forchlorfenuron) 1%",
+      phi: "7–14 days.",
+      usageRate:
+        "10–15 ml per 100 liters of water as a foliar spray at the fruit-set stage.",
+    },
+    ar: {
+      title: "سيتوجرو",
+      subtitle: "سي بي بي يو (فوركلورفينورون) 1%",
+      description:
+        "سيتوجرو منظم نمو نباتي من مجموعة السيتوكينين الصناعي يحفز انقسام الخلايا، مما يزيد من حجم الثمار ويحسّن عقدها.",
+      features: [
+        "يحفز انقسام الخلايا لزيادة حجم الثمار.",
+        "يحسّن عقد الثمار وتجانسها.",
+        "يعزز إمكانية زيادة المحصول.",
+      ],
+      pestsControlled: ["صغر حجم الثمار", "ضعف عقد الثمار"],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات"],
+      activeIngredient: "سي بي بي يو (فوركلورفينورون) 1%",
+      phi: "7–14 يومًا.",
+      usageRate:
+        "10–15 مل لكل 100 لتر ماء رشًا على الأوراق في مرحلة عقد الثمار.",
+    },
+  },
+  74: {
+    category: "growth-regulator",
+    categoryLabel: { en: "Growth Regulator", ar: "منظم نمو نباتي" },
+    image: "/assets/cytogro-plus.png",
+    en: {
+      title: "Cytogro Plus",
+      subtitle: "CPPU 2% + 6-Benzylaminopurine (6-BA) 2%",
+      description:
+        "Cytogro Plus is a dual cytokinin growth regulator combining CPPU and 6-BA for stronger cell-division activity, giving larger fruit size and improved fruit set.",
+      features: [
+        "Dual cytokinin action for a stronger effect.",
+        "Increases fruit size and fruit set.",
+        "Improves uniformity and yield.",
+      ],
+      pestsControlled: [
+        "Small Fruit Size",
+        "Poor Fruit Set",
+        "Uneven Fruit Development",
+      ],
+      cropsUsedFor: ["Fruit Trees", "Vegetables"],
+      activeIngredient: "CPPU 2% + 6-Benzylaminopurine (6-BA) 2%",
+      phi: "7–14 days.",
+      usageRate:
+        "8–12 ml per 100 liters of water as a foliar spray at the fruit-set stage.",
+    },
+    ar: {
+      title: "سيتوجرو بلس",
+      subtitle: "سي بي بي يو 2% + 6-بنزيل أمينوبيورين (6-BA) 2%",
+      description:
+        "سيتوجرو بلس منظم نمو نباتي مزدوج يجمع بين CPPU و6-BA لنشاط أقوى في انقسام الخلايا، مما يعطي حجم ثمار أكبر وعقدًا أفضل.",
+      features: [
+        "فعل سيتوكينين مزدوج لتأثير أقوى.",
+        "يزيد من حجم الثمار وعقدها.",
+        "يحسّن التجانس والمحصول.",
+      ],
+      pestsControlled: [
+        "صغر حجم الثمار",
+        "ضعف عقد الثمار",
+        "عدم انتظام نمو الثمار",
+      ],
+      cropsUsedFor: ["أشجار الفاكهة", "الخضروات"],
+      activeIngredient: "سي بي بي يو 2% + 6-بنزيل أمينوبيورين (6-BA) 2%",
+      phi: "7–14 يومًا.",
+      usageRate:
+        "8–12 مل لكل 100 لتر ماء رشًا على الأوراق في مرحلة عقد الثمار.",
     },
   },
 };

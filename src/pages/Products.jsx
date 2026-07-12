@@ -43,9 +43,7 @@ export default function Products() {
       localized.subtitle.toLowerCase().includes(term);
 
     let matchesFilter = true;
-    if (activeFilter === "growth-regulator") {
-      matchesFilter = product.categoryLabel.en === "Anti-peeling";
-    } else if (activeFilter !== "all") {
+    if (activeFilter !== "all") {
       matchesFilter =
         product.category.toLowerCase() === activeFilter.toLowerCase();
     }
