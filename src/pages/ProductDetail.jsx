@@ -1,28 +1,47 @@
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import products, { localizeProduct } from "../data/products";
+import { Link, Navigate, useParams } from "react-router-dom";
+import products from "../data/products";
 import { useLanguage } from "../context/LanguageContext";
+import Seo from "../seo/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
+import NotFound from "./NotFound";
+import { BRAND } from "../seo/config";
+import { productIdFromParam, productPath, productSeo, relatedByIngredient, ingredientPath, categoryPath, CATEGORIES, productsInCategory } from "../seo/catalog";
+import { ARABIC_ALIASES } from "../seo/ingredients";
+import { productSchema, breadcrumbSchema } from "../seo/schema";
+import { imageSize } from "../data/images";
 
 export default function ProductDetail() {
-  const { id } = useParams();
-  const rawProduct = products[id];
-  const { t, lang } = useLanguage();
-  const product = localizeProduct(rawProduct, lang);
+  const { slug } = useParams();
+  const { t, lang, lp } = useLanguage();
   const [panel, setPanel] = useState(null); // null | "phi" | "usageRate"
 
-  if (!product) {
-    return (
-      <div className="container my-5">
-        <div className="col-12 mb-3">
-          <Link to="/products" className="btn btn-outline-secondary">
-            <i className="fas fa-arrow-left"></i> {t("backToProducts")}
-          </Link>
-        </div>
-        <h1 className="fw-bold mt-4">{t("productNotFound")}</h1>
-        <p className="lead">{t("selectValidProduct")}</p>
-      </div>
-    );
-  }
+  // Old numeric links (/product/5) -> new keyword URL
+  if (products[slug]) return <Navigate to={lp(productPath(slug))} replace />;
+  const id = productIdFromParam(slug);
+  if (!id) return <NotFound />;
+
+  const rawProduct = products[id];
+  const { p: product, other, title, description, overview, ingredients } = productSeo(id, lang);
+  const catSlug = Object.keys(CATEGORIES).find((k) => k !== "pesticides" && CATEGORIES[k].match(rawProduct));
+  const crumbs = [
+    { name: t("breadcrumbHome"), path: "/" },
+    { name: t("navProducts"), path: "/products" },
+    ...(catSlug ? [{ name: t(CATEGORIES[catSlug].filterKey), path: categoryPath(catSlug) }] : []),
+    { name: product.title, path: productPath(id) },
+  ];
+  const related = relatedByIngredient(id);
+  const sameCategory = catSlug ? productsInCategory(catSlug).map(([i]) => i).filter((i) => i !== String(id)).slice(0, 6) : [];
+  const sep = lang === "ar" ? "، " : ", ";
+  const specs = [
+    [t("specName"), `${product.title} (${other.title})`],
+    [t("specActive"), product.activeIngredient],
+    [t("specType"), product.categoryLabel],
+    [t("specCrops"), product.cropsUsedFor.join(sep)],
+    [t("specTargets"), product.pestsControlled.join(sep)],
+    [t("specPhi"), product.phi],
+    [t("specUsage"), product.usageRate],
+  ];
 
   const togglePanel = (key) => {
     setPanel((prev) => (prev === key ? null : key));
@@ -30,12 +49,17 @@ export default function ProductDetail() {
 
   return (
     <div className="container my-5">
+      <Seo
+        path={productPath(id)}
+        title={title}
+        description={description}
+        image={product.image}
+        type="product"
+        jsonLd={[productSchema(lang, id), breadcrumbSchema(lang, crumbs)]}
+      />
       <div className="row">
-        {/* Back Button */}
-        <div className="col-12 mb-3">
-          <Link to="/products" className="btn btn-outline-secondary">
-            <i className="fas fa-arrow-left"></i> {t("backToProducts")}
-          </Link>
+        <div className="col-12">
+          <Breadcrumbs items={crumbs} />
         </div>
 
         {/* Product Image */}
@@ -43,7 +67,8 @@ export default function ProductDetail() {
           <img
             src={product.image}
             className="img-fluid rounded shadow"
-            alt={product.title}
+            alt={`${product.title} ${product.subtitle} – ${product.categoryLabel}`}
+            {...imageSize(product.image)}
           />
         </div>
 
@@ -134,7 +159,7 @@ export default function ProductDetail() {
           )}
 
           <a
-            href="https://wa.me/+201061967175"
+            href={BRAND.whatsapp}
             className="btn btn-success btn-lg w-100"
             target="_blank"
             rel="noreferrer"
@@ -143,6 +168,67 @@ export default function ProductDetail() {
           </a>
         </div>
       </div>
+
+      {/* Always-visible, crawlable product information */}
+      <section className="mt-5">
+        <h2 className="h4 fw-bold text-success">{t("overviewTitle")}</h2>
+        <p>{overview}</p>
+
+        <h2 className="h4 fw-bold text-success mt-4">{t("specTitle")}</h2>
+        <div className="table-responsive">
+          <table className="table table-striped align-middle">
+            <tbody>
+              {specs.map(([k, v]) => (
+                <tr key={k}>
+                  <th scope="row" style={{ width: "30%" }}>{k}</th>
+                  <td>{v}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {ingredients.length > 0 && (
+          <div className="mb-4">
+            {ingredients.map((ing) => (
+              <div key={ing.slug} className="mb-2">
+                <Link to={lp(ingredientPath(ing.slug))} className="btn btn-outline-success btn-sm">
+                  {t("ingredientLink")} {lang === "ar" ? `${ing.ar} (${ing.en})` : ing.en}
+                </Link>
+                {lang === "ar" && ing.aliases.filter((a) => a !== ing.ar).length > 0 && (
+                  <span className="text-muted small ms-2 me-2">
+                    {t("ingredientAlsoSpelled")} {ing.aliases.filter((a) => a !== ing.ar).join("، ")}
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {related.length > 0 && <RelatedList title={t("relatedSameIngredient")} ids={related} />}
+        {sameCategory.length > 0 && <RelatedList title={t("moreInCategory")} ids={sameCategory} />}
+      </section>
+    </div>
+  );
+}
+
+function RelatedList({ title, ids }) {
+  const { lang, lp } = useLanguage();
+  return (
+    <div className="mt-4">
+      <h2 className="h5 fw-bold">{title}</h2>
+      <ul className="list-inline">
+        {ids.map((i) => {
+          const rp = productSeo(i, lang).p;
+          return (
+            <li key={i} className="list-inline-item mb-2">
+              <Link to={lp(productPath(i))} className="btn btn-light border btn-sm">
+                {rp.title} <span className="text-muted">{rp.subtitle}</span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

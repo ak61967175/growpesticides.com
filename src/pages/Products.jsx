@@ -1,11 +1,15 @@
 import { useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import products, { localizeProduct } from "../data/products";
+import { Link, useParams } from "react-router-dom";
+import { localizeProduct } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Seo from "../seo/Seo";
+import NotFound from "./NotFound";
 import { useLanguage } from "../context/LanguageContext";
+import { productsInCategory, CATEGORIES, CATEGORY_ORDER, CATEGORY_CONTENT, categoryPath, productSeo } from "../seo/catalog";
+import { breadcrumbSchema, itemListSchema, collectionPageSchema } from "../seo/schema";
 
-// Priority used for final ordering: normal categories first, then
-// growth regulators (IGR / "Anti-peeling"), then Nutrients & micronutrients last.
+// Normal categories first, then growth regulators, then nutrients last.
 function getPriority(product) {
   if (product.category === "Nutrients & micronutrients") return 2;
   if (product.categoryLabel.en === "Anti-peeling") return 1;
@@ -13,61 +17,60 @@ function getPriority(product) {
 }
 
 export default function Products() {
-  const { t, lang } = useLanguage();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const { t, lang, lp } = useLanguage();
+  const { cat } = useParams();
+  const slug = cat || "all";
+  const valid = slug === "all" || CATEGORIES[slug];
   const [search, setSearch] = useState("");
-  const initialFilter = searchParams.get("category") || "all";
-  const [activeFilter, setActiveFilter] = useState(initialFilter);
 
-  const filters = [
-    { label: t("filterAll"), value: "all" },
-    { label: t("filterInsecticides"), value: "insecticide" },
-    { label: t("filterHerbicides"), value: "herbicide" },
-    { label: t("filterFungicides"), value: "fungicide" },
-    { label: t("filterAcaricides"), value: "acaricide" },
-    { label: t("filterNutrients"), value: "Nutrients & micronutrients" },
-    { label: t("filterGrowthRegulators"), value: "growth-regulator" },
-  ];
+  const entries = useMemo(
+    () => (valid ? productsInCategory(slug).sort(([, a], [, b]) => getPriority(a) - getPriority(b)) : []),
+    [slug, valid]
+  );
+  if (!valid) return <NotFound />;
 
-  const entries = useMemo(() => {
-    return Object.entries(products).sort(
-      ([, a], [, b]) => getPriority(a) - getPriority(b)
-    );
-  }, []);
-
-  const visibleProducts = entries.filter(([, product]) => {
-    const localized = localizeProduct(product, lang);
-    const term = search.toLowerCase();
-    const matchesSearch =
-      localized.title.toLowerCase().includes(term) ||
-      localized.subtitle.toLowerCase().includes(term);
-
-    let matchesFilter = true;
-    if (activeFilter !== "all") {
-      matchesFilter =
-        product.category.toLowerCase() === activeFilter.toLowerCase();
-    }
-
-    return matchesSearch && matchesFilter;
+  const content = CATEGORY_CONTENT[slug][lang];
+  const term = search.trim().toLowerCase();
+  // Search matches names / active ingredients in BOTH languages (so "bifenthrin" finds it from the Arabic page too).
+  const visible = entries.filter(([id, product]) => {
+    if (!term) return true;
+    const a = localizeProduct(product, "ar");
+    const e = localizeProduct(product, "en");
+    return [a.title, a.subtitle, e.title, e.subtitle].some((x) => x.toLowerCase().includes(term));
   });
 
-  const handleFilterClick = (value) => {
-    setActiveFilter(value);
-    setSearchParams(value === "all" ? {} : { category: value });
-  };
+  const filters = ["all", ...CATEGORY_ORDER];
+  const crumbs = [
+    { name: t("breadcrumbHome"), path: "/" },
+    { name: t("navProducts"), path: "/products" },
+    ...(slug !== "all" ? [{ name: t(CATEGORIES[slug].filterKey), path: categoryPath(slug) }] : []),
+  ];
 
   return (
     <>
-      {/* Page Header */}
+      <Seo
+        path={categoryPath(slug)}
+        title={content.title}
+        description={content.description}
+        jsonLd={[
+          collectionPageSchema(lang, { name: content.h1, description: content.description, path: categoryPath(slug) }),
+          breadcrumbSchema(lang, crumbs),
+          itemListSchema(lang, content.h1, entries.map(([id]) => id)),
+        ]}
+      />
       <div className="bg-light py-5 text-center mt-2">
         <div className="container">
-          <h1 className="fw-bold text-success">{t("productsPageTitle")}</h1>
-          <p>{t("productsPageSubtitle")}</p>
+          <h1 className="fw-bold text-success">{content.h1}</h1>
+          {content.intro.map((par, i) => (
+            <p key={i} className="mx-auto mb-2" style={{ maxWidth: 820 }}>
+              {par}
+            </p>
+          ))}
         </div>
       </div>
 
-      {/* Search and Filter */}
       <div className="container my-5">
+        <Breadcrumbs items={crumbs} />
         <div className="row mb-4">
           <div className="col-md-6 mx-auto">
             <div className="input-group input-group-lg">
@@ -75,10 +78,11 @@ export default function Products() {
                 <i className="fas fa-search"></i>
               </span>
               <input
-                type="text"
+                type="search"
                 id="searchInput"
                 className="form-control border-start-0"
                 placeholder={t("searchPlaceholder")}
+                aria-label={t("searchPlaceholder")}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
@@ -86,32 +90,24 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="filter-bar mb-5">
+        {/* Filters are real links so each category has its own crawlable page */}
+        <nav className="filter-bar mb-5">
           {filters.map((f) => (
-            <button
-              key={f.value}
-              className={
-                "btn btn-outline-success" +
-                (activeFilter === f.value ? " active" : "")
-              }
-              data-filter={f.value}
-              onClick={() => handleFilterClick(f.value)}
+            <Link
+              key={f}
+              to={lp(categoryPath(f))}
+              className={"btn btn-outline-success" + (f === slug ? " active" : "")}
             >
-              {f.label}
-            </button>
+              {f === "all" ? t("filterAll") : t(CATEGORIES[f].filterKey)}
+            </Link>
           ))}
-        </div>
+        </nav>
 
         <div className="row g-4" id="productGrid">
-          {visibleProducts.map(([id, product]) => (
-            <ProductCard key={id} id={id} product={product} />
+          {visible.map(([id, product], i) => (
+            <ProductCard key={id} id={id} product={product} eager={i < 3} />
           ))}
-
-          {visibleProducts.length === 0 && (
-            <div className="col-12 text-center text-muted py-5">
-              {t("noResults")}
-            </div>
-          )}
+          {visible.length === 0 && <div className="col-12 text-center text-muted py-5">{t("noResults")}</div>}
         </div>
       </div>
     </>

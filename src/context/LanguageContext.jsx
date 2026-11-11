@@ -1,16 +1,14 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import translations from "../data/translations";
 
 const LanguageContext = createContext(null);
 
-export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(() => {
-    try {
-      return localStorage.getItem("grow_lang") || "en";
-    } catch {
-      return "en";
-    }
-  });
+// The language now lives in the URL (/ar/... or /en/...), so every language has its
+// own crawlable address and Google can index both (with hreflang links between them).
+export function LanguageProvider({ lang, children }) {
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -22,21 +20,20 @@ export function LanguageProvider({ children }) {
     }
   }, [lang]);
 
-  const toggleLang = () => setLang((prev) => (prev === "en" ? "ar" : "en"));
+  const toggleLang = () => {
+    const next = lang === "ar" ? "en" : "ar";
+    navigate(location.pathname.replace(/^\/(ar|en)(?=\/|$)/, `/${next}`) + location.search + location.hash);
+  };
 
   const t = (key) => translations[lang]?.[key] ?? translations.en[key] ?? key;
+  // lp("/products") -> "/ar/products"
+  const lp = (path = "/") => `/${lang}${path === "/" ? "" : path}`;
 
-  return (
-    <LanguageContext.Provider value={{ lang, toggleLang, t }}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <LanguageContext.Provider value={{ lang, toggleLang, t, lp }}>{children}</LanguageContext.Provider>;
 }
 
 export function useLanguage() {
   const ctx = useContext(LanguageContext);
-  if (!ctx) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
-  }
+  if (!ctx) throw new Error("useLanguage must be used within a LanguageProvider");
   return ctx;
 }

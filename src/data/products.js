@@ -17,7 +17,9 @@
 //    `usageRate`. Keep the SAME NUMBER of items in `features`,
 //    `pestsControlled`, and `cropsUsedFor` between `en` and `ar` (order
 //    matters, they're just translations of each other).
-// 6. To feature a product on the homepage carousel, add its id to the
+// 6. (Optional) add `price: 250` (and `currency: "EGP"`) to a product to publish its
+//    price in search results (needed for Google product listings / Shopping).
+// 7. To feature a product on the homepage carousel, add its id to the
 //    `featuredIds` array exported below.
 // -----------------------------------------------------------------------------
 
@@ -2973,7 +2975,10 @@ export function localizeProduct(product, lang) {
   return {
     category: product.category,
     categoryLabel: product.categoryLabel[safeLang] ?? product.categoryLabel.en,
-    image: product.image,
+    // Images are served as optimized WebP (see scripts/optimize-images.mjs)
+    image: product.image.replace(/\.(png|jpe?g)$/i, ".webp"),
+    price: product.price,
+    currency: product.currency,
     ...product[safeLang],
   };
 }
