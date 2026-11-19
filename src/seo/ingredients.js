@@ -25,6 +25,7 @@ function cleanName(raw, lang) {
 // Extra spellings people actually type in Arabic for the same molecule.
 // (Shown on the ingredient page & product pages so searches with other spellings still match.)
 export const ARABIC_ALIASES = {
+  "beta-cyfluthrin": ["بيتا سايفلوثرين", "بيتاسايفلوثرين", "بيتا سيفلوثرين", "بيتاثلفوثرين"],
   bifenthrin: ["بيفنثرين", "بايفنثرين", "بيفينثرين"],
   imidacloprid: ["ايميداكلوبريد", "اميداكلوبريد", "إيميداكلوبرايد"],
   chlorpyrifos: ["كلوربيريفوس", "كلوروبيريفوس", "كلوربيرفوس", "كلوربيريفوس إيثيل"],

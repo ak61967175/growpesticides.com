@@ -84,7 +84,7 @@ export default function ProductDetail() {
             <button
               type="button"
               className={
-                "btn btn-outline-success flex-fill" +
+                "btn btn-outline-success flex-fill text-wrap" +
                 (panel === "phi" ? " active" : "")
               }
               onClick={() => togglePanel("phi")}
@@ -95,7 +95,7 @@ export default function ProductDetail() {
             <button
               type="button"
               className={
-                "btn btn-outline-success flex-fill" +
+                "btn btn-outline-success flex-fill text-wrap" +
                 (panel === "usageRate" ? " active" : "")
               }
               onClick={() => togglePanel("usageRate")}
@@ -192,7 +192,7 @@ export default function ProductDetail() {
           <div className="mb-4">
             {ingredients.map((ing) => (
               <div key={ing.slug} className="mb-2">
-                <Link to={lp(ingredientPath(ing.slug))} className="btn btn-outline-success btn-sm">
+                <Link to={lp(ingredientPath(ing.slug))} className="btn btn-outline-success btn-sm text-wrap">
                   {t("ingredientLink")} {lang === "ar" ? `${ing.ar} (${ing.en})` : ing.en}
                 </Link>
                 {lang === "ar" && ing.aliases.filter((a) => a !== ing.ar).length > 0 && (
@@ -222,7 +222,7 @@ function RelatedList({ title, ids }) {
           const rp = productSeo(i, lang).p;
           return (
             <li key={i} className="list-inline-item mb-2">
-              <Link to={lp(productPath(i))} className="btn btn-light border btn-sm">
+              <Link to={lp(productPath(i))} className="btn btn-light border btn-sm text-wrap">
                 {rp.title} <span className="text-muted">{rp.subtitle}</span>
               </Link>
             </li>

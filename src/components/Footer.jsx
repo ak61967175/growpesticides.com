@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { BRAND } from "../seo/config";
 import { CATEGORY_ORDER, CATEGORIES, categoryPath } from "../seo/catalog";
-import { imageSize } from "../data/images";
 
 export default function Footer() {
   const { t, lp, lang } = useLanguage();
@@ -13,7 +12,7 @@ export default function Footer() {
         <div className="container position-relative">
           <div className="row">
             <div className="col-md-4 mb-4">
-              <img src="/assets/logo.webp" alt={BRAND.full[lang]} height="44" className="mb-3" {...imageSize("/assets/logo.webp")} />
+              <img src="/assets/logo.webp" alt={BRAND.full[lang]} width="44" height="44" className="mb-3" />
               <p className="small">{t("footerTagline")}</p>
             </div>
             <div className="col-md-4 mb-4">

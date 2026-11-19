@@ -36,6 +36,8 @@ export function getRedirects() {
   // Old URLs from the previous version of the site → new ones (static redirect pages)
   const list = [{ from: "/products", to: "/ar/products" }];
   for (const id of Object.keys(products)) list.push({ from: `/product/${id}`, to: `/ar${productPath(id)}` });
+  // Beta Thol changed active ingredient (Bifenthrin -> Beta-Cyfluthrin): keep the old indexed URL working
+  for (const l of LANGS) list.push({ from: `/${l}/product/beta-thol-bifenthrin-10`, to: `/${l}${productPath(1)}` });
   return { list, legacyCategory: LEGACY_CATEGORY };
 }
 

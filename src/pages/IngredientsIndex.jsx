@@ -21,8 +21,8 @@ export default function IngredientsIndex() {
       : "Pesticide Active Ingredients – Full List by Active Ingredient | GROW";
   const description =
     lang === "ar"
-      ? "قائمة المواد الفعالة في مبيدات جرو الزراعية مثل بايفنثرين وإيميداكلوبريد وكلوربيريفوس وأباميكتين ومانكوزيب، مع المنتجات التجارية لكل مادة."
-      : "All active ingredients in GROW agricultural pesticides – Bifenthrin, Imidacloprid, Chlorpyrifos, Abamectin, Mancozeb and more – with the products for each.";
+      ? "قائمة المواد الفعالة في مبيدات جرو الزراعية مثل بيتا سايفلوثرين وإيميداكلوبريد وكلوربيريفوس وأباميكتين ومانكوزيب، مع المنتجات التجارية لكل مادة."
+      : "All active ingredients in GROW agricultural pesticides – Beta-Cyfluthrin, Imidacloprid, Chlorpyrifos, Abamectin, Mancozeb and more – with the products for each.";
 
   const Group = ({ heading, items }) => (
     <>

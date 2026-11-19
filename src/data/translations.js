@@ -77,7 +77,7 @@ const translations = {
     homeSeoP1:
       "GROW for Agricultural Investment supplies agricultural pesticides, fertilizers, micronutrients and plant growth regulators for vegetables, fruit trees and field crops: insecticides, fungicides, herbicides and acaricides with clearly stated active ingredients and usage rates.",
     homeSeoP2:
-      "Looking for a product by name or by active ingredient such as Bifenthrin, Imidacloprid, Chlorpyrifos, Abamectin or Mancozeb? Use the product search or browse the active ingredient pages below.",
+      "Looking for a product by name or by active ingredient such as Beta-Cyfluthrin, Imidacloprid, Chlorpyrifos, Abamectin or Mancozeb? Use the product search or browse the active ingredient pages below.",
     popularIngredients: "Search by Active Ingredient",
     popularIngredientsSub: "Find every GROW product containing the active ingredient you need",
     allIngredients: "All Active Ingredients",
@@ -179,7 +179,7 @@ const translations = {
     homeSeoP1:
       "جرو للاستثمار الزراعي تورّد المبيدات الزراعية والأسمدة والعناصر الصغرى ومنظمات النمو للخضروات والفاكهة والمحاصيل الحقلية: مبيدات حشرية وفطرية وحشائش وأكاروسية بمواد فعالة ومعدلات استخدام واضحة لكل منتج.",
     homeSeoP2:
-      "تبحث عن منتج باسمه أو بالمادة الفعالة مثل بايفنثرين أو إيميداكلوبريد أو كلوربيريفوس أو أباميكتين أو مانكوزيب؟ استخدم البحث في المنتجات أو تصفح صفحات المواد الفعالة بالأسفل.",
+      "تبحث عن منتج باسمه أو بالمادة الفعالة مثل بيتا سايفلوثرين أو إيميداكلوبريد أو كلوربيريفوس أو أباميكتين أو مانكوزيب؟ استخدم البحث في المنتجات أو تصفح صفحات المواد الفعالة بالأسفل.",
     popularIngredients: "ابحث بالمادة الفعالة",
     popularIngredientsSub: "اعثر على كل منتجات جرو التي تحتوي على المادة الفعالة التي تحتاجها",
     allIngredients: "كل المواد الفعالة",

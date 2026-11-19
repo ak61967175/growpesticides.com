@@ -62,7 +62,7 @@ export const CATEGORY_CONTENT = {
         "تصفح كتالوج جرو للمبيدات الزراعية: مبيدات حشرية وفطرية وحشائش وأكاروسية، أسمدة وعناصر صغرى ومنظمات نمو. ابحث باسم المنتج أو المادة الفعالة واطلب عرض سعر.",
       intro: [
         "كتالوج جرو للاستثمار الزراعي يضم مجموعة كاملة من المبيدات الزراعية والأسمدة والعناصر الصغرى ومنظمات النمو لحماية المحاصيل وزيادة الإنتاجية.",
-        "يمكنك البحث عن أي منتج باسمه التجاري أو بالمادة الفعالة مثل بايفنثرين وإيميداكلوبريد وكلوربيريفوس وأباميكتين، أو التصفح حسب نوع المبيد: حشري، فطري، حشائش، أو أكاروسي.",
+        "يمكنك البحث عن أي منتج باسمه التجاري أو بالمادة الفعالة مثل بيتا سايفلوثرين وإيميداكلوبريد وكلوربيريفوس وأباميكتين، أو التصفح حسب نوع المبيد: حشري، فطري، حشائش، أو أكاروسي.",
       ],
     },
     en: {
@@ -72,7 +72,7 @@ export const CATEGORY_CONTENT = {
         "Browse the GROW catalog: insecticides, fungicides, herbicides, acaricides, fertilizers, micronutrients and plant growth regulators. Search by product name or active ingredient.",
       intro: [
         "The GROW for Agricultural Investment catalog covers crop-protection pesticides, fertilizers, micronutrients and plant growth regulators for modern farming.",
-        "Search by trade name or by active ingredient such as Bifenthrin, Imidacloprid, Chlorpyrifos or Abamectin, or browse by type: insecticide, fungicide, herbicide or acaricide.",
+        "Search by trade name or by active ingredient such as Beta-Cyfluthrin, Imidacloprid, Chlorpyrifos or Abamectin, or browse by type: insecticide, fungicide, herbicide or acaricide.",
       ],
     },
   },
@@ -100,23 +100,23 @@ export const CATEGORY_CONTENT = {
   },
   insecticides: {
     ar: {
-      title: "مبيدات حشرية – بايفنثرين، إيميداكلوبريد، كلوربيريفوس | جرو",
+      title: "مبيدات حشرية – بيتا سايفلوثرين، إيميداكلوبريد، كلوربيريفوس | جرو",
       h1: "المبيدات الحشرية",
       description:
-        "مبيدات حشرية من جرو لمكافحة المن والذبابة البيضاء والتربس والديدان: بايفنثرين، إيميداكلوبريد، كلوربيريفوس، لامبدا سيهالوثرين وغيرها. اطلب عرض سعر.",
+        "مبيدات حشرية من جرو لمكافحة المن والذبابة البيضاء والتربس والديدان: بيتا سايفلوثرين، إيميداكلوبريد، كلوربيريفوس، لامبدا سيهالوثرين وغيرها. اطلب عرض سعر.",
       intro: [
         "المبيدات الحشرية من جرو مخصصة لمكافحة الآفات الماصة والقارضة مثل المن والذبابة البيضاء والتربس والديدان وحشرات التربة.",
-        "تشمل المجموعة مواد فعالة معروفة مثل بايفنثرين وإيميداكلوبريد وكلوربيريفوس ودلتامثرين وأسيتامبريد وإيمامكتين بنزوات.",
+        "تشمل المجموعة مواد فعالة معروفة مثل بيتا سايفلوثرين وإيميداكلوبريد وكلوربيريفوس ودلتامثرين وأسيتامبريد وإيمامكتين بنزوات.",
       ],
     },
     en: {
-      title: "Insecticides – Bifenthrin, Imidacloprid, Chlorpyrifos | GROW",
+      title: "Insecticides – Beta-Cyfluthrin, Imidacloprid, Chlorpyrifos | GROW",
       h1: "Insecticides",
       description:
-        "GROW insecticides against aphids, whiteflies, thrips and caterpillars: Bifenthrin, Imidacloprid, Chlorpyrifos, Lambda-cyhalothrin and more. Request a quote.",
+        "GROW insecticides against aphids, whiteflies, thrips and caterpillars: Beta-Cyfluthrin, Imidacloprid, Chlorpyrifos, Lambda-cyhalothrin and more. Request a quote.",
       intro: [
         "GROW insecticides target sucking and chewing pests such as aphids, whiteflies, thrips, caterpillars and soil insects.",
-        "The range covers well-known active ingredients including Bifenthrin, Imidacloprid, Chlorpyrifos, Deltamethrin, Acetamiprid and Emamectin Benzoate.",
+        "The range covers well-known active ingredients including Beta-Cyfluthrin, Imidacloprid, Chlorpyrifos, Deltamethrin, Acetamiprid and Emamectin Benzoate.",
       ],
     },
   },

@@ -30,9 +30,9 @@ const products = {
     image: "/assets/betasol.jpg",
     en: {
       title: "Beta Thol",
-      subtitle: "Bifenthrin 10%",
+      subtitle: "Beta-Cyfluthrin 12.5%",
       description:
-        "Beta Thol is a powerful pyrethroid insecticide containing Bifenthrin 10%. It provides fast knockdown and strong residual control against a wide range of chewing and sucking pests.",
+        "Beta Thol is a powerful pyrethroid insecticide containing Beta-Cyfluthrin 12.5%. It provides fast knockdown and strong residual control against a wide range of chewing and sucking pests.",
       features: [
         "Fast knockdown of insect pests.",
         "Long residual protection.",
@@ -40,15 +40,15 @@ const products = {
       ],
       pestsControlled: ["Aphids", "Whiteflies", "Thrips", "Caterpillars"],
       cropsUsedFor: ["Vegetables", "Cotton", "Fruit Trees"],
-      activeIngredient: "Bifenthrin 10%",
-      phi: "7 days on vegetables and cotton; 14 days on fruit trees.",
-      usageRate: "30–50 ml per 100 liters of water as a foliar spray.",
+      activeIngredient: "Beta-Cyfluthrin 12.5%",
+      phi: "2 days.",
+      usageRate: "15 ml (cc) per 20 liters of water.",
     },
     ar: {
       title: "بيتا ثول",
-      subtitle: "بايفنثرين 10%",
+      subtitle: "بيتا سايفلوثرين 12.5%",
       description:
-        "بيتا ثول مبيد حشري قوي من مجموعة البيرثرويدات يحتوي على مادة بايفنثرين 10%. يعمل على إسقاط سريع للحشرات وحماية متبقية قوية ضد مجموعة واسعة من الآفات القارضة والماصة.",
+        "بيتا ثول مبيد حشري قوي من مجموعة البيرثرويدات يحتوي على مادة بيتا سايفلوثرين 12.5%. يعمل على إسقاط سريع للحشرات وحماية متبقية قوية ضد مجموعة واسعة من الآفات القارضة والماصة.",
       features: [
         "إسقاط سريع للحشرات.",
         "حماية متبقية طويلة المدى.",
@@ -56,9 +56,9 @@ const products = {
       ],
       pestsControlled: ["المن", "الذبابة البيضاء", "التربس", "الديدان (اليرقات)"],
       cropsUsedFor: ["الخضروات", "القطن", "أشجار الفاكهة"],
-      activeIngredient: "بايفنثرين 10%",
-      phi: "7 أيام على الخضروات والقطن؛ 14 يومًا على أشجار الفاكهة.",
-      usageRate: "30–50 مل لكل 100 لتر ماء رشًا على الأوراق.",
+      activeIngredient: "بيتا سايفلوثرين 12.5%",
+      phi: "يومان.",
+      usageRate: "15 سم³ (مل) لكل 20 لتر ماء.",
     },
   },
   2: {

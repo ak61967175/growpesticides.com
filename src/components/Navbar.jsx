@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { BRAND } from "../seo/config";
-import { imageSize } from "../data/images";
 
 export default function Navbar() {
   const { t, lang, toggleLang, lp } = useLanguage();
@@ -10,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div className="container">
         <NavLink className="navbar-brand fw-bold d-flex align-items-center gap-2" to={lp("/")} aria-label={BRAND.full[lang]}>
-          <img src="/assets/logo.webp" alt={BRAND.full[lang]} height="36" {...imageSize("/assets/logo.webp")} />
+          <img src="/assets/logo.webp" alt={BRAND.full[lang]} width="180" height="150" />
         </NavLink>
 
         {/* Always-visible controls: language switch + hamburger. */}
