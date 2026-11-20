@@ -159,7 +159,7 @@ const products = {
       cropsUsedFor: ["Vegetables", "Fruit Trees", "Field Crops"],
       activeIngredient: "Deltamethrin 5% EC",
       phi: "3–7 days on vegetables; 7 days on field crops and fruit trees.",
-      usageRate: "30–50 ml per 100 liters of water as a foliar spray.",
+      usageRate: "30 ml (cc) per 10 liters of water.",
     },
     ar: {
       title: "دلتا توب",
@@ -175,7 +175,7 @@ const products = {
       cropsUsedFor: ["الخضروات", "أشجار الفاكهة", "المحاصيل الحقلية"],
       activeIngredient: "دلتامثرين 5% EC",
       phi: "3–7 أيام على الخضروات؛ 7 أيام على المحاصيل الحقلية وأشجار الفاكهة.",
-      usageRate: "30–50 مل لكل 100 لتر ماء رشًا على الأوراق.",
+      usageRate: "30 سم³ (مل) لكل 10 لتر ماء.",
     },
   },
   5: {
